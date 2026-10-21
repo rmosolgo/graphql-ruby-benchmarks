@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792597398097,
+  "lastUpdate": 1792597479674,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -800,6 +800,86 @@ window.BENCHMARK_DATA = {
             "range": "±0.0%",
             "unit": "i/s",
             "extra": "33.000 iterations in 5.058630s (153.29 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a5c51dd635b1286d8b6478b1afd681081ccd0432",
+          "message": "Merge pull request #5827 from rmosolgo/fix-indirect-interface-possible-types\n\nAdd possible types for interfaces implemented through a late-bound interface",
+          "timestamp": "2026-10-21T11:43:19-04:00",
+          "tree_id": "757d483f14a5cd5757f07f4c2579d71eae29c18f",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/a5c51dd635b1286d8b6478b1afd681081ccd0432"
+        },
+        "date": 1792597479331,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 5551,
+            "range": "±4.6%",
+            "unit": "i/s",
+            "extra": "27.881k iterations in 5.022926s (180.16 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 922.321,
+            "range": "±2.9%",
+            "unit": "i/s",
+            "extra": "4.655k iterations in 5.047051s (1.08 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 2624,
+            "range": "±5.3%",
+            "unit": "i/s",
+            "extra": "13.176k iterations in 5.020440s (381.03 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 216.709,
+            "range": "±5.1%",
+            "unit": "i/s",
+            "extra": "1.104k iterations in 5.094400s (4.61 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 52.142,
+            "range": "±3.8%",
+            "unit": "i/s",
+            "extra": "265.000 iterations in 5.082298s (19.18 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 37.894,
+            "range": "±5.3%",
+            "unit": "i/s",
+            "extra": "192.000 iterations in 5.066720s (26.39 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 4869,
+            "range": "±5.6%",
+            "unit": "i/s",
+            "extra": "24.650k iterations in 5.062480s (205.37 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 6.091,
+            "range": "±0.0%",
+            "unit": "i/s",
+            "extra": "31.000 iterations in 5.089326s (164.17 ms/i)"
           }
         ]
       }
