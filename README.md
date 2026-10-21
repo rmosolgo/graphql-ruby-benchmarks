@@ -2,7 +2,7 @@
 
 Benchmark results for [GraphQL-Ruby](https://github.com/rmosolgo/graphql-ruby), tracked over time.
 
-**Charts: https://rmosolgo.github.io/graphql-ruby-benchmarks/dev/bench/**
+**Charts: https://rmosolgo.github.io/graphql-ruby-benchmarks/**
 
 This repository only stores results. The benchmarks themselves live in GraphQL-Ruby, and a workflow there
 runs them on each push to `master`. It records the results here with
@@ -12,7 +12,8 @@ using its `rubyruntime` (benchmark-ips) and `rubymemory` (benchmark-memory) tool
 Results are committed to the [`gh-pages`](../../tree/gh-pages) branch:
 
 - `dev/bench/data.js` — every recorded result, keyed by benchmark name
-- `dev/bench/index.html` — the chart page, created on the first run
+- `index.html` — the chart page, grouped by benchmark. Link to one benchmark with its slug, e.g. `#parse-big-query`.
+- `dev/bench/index.html` — redirects to `index.html`. The action only creates this file when it's missing, so it won't overwrite the redirect.
 
 ## Caveats
 
