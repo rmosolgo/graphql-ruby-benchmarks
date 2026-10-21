@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792581097219,
+  "lastUpdate": 1792595114349,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -560,6 +560,86 @@ window.BENCHMARK_DATA = {
             "range": "±0.0%",
             "unit": "i/s",
             "extra": "30.000 iterations in 5.071870s (169.06 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "08ecb97120b0117e0cec868b70cdb206d0a42ad6",
+          "message": "Merge pull request #5777 from ydah/fix-nested-list-null-errors\n\nPrevent TypeError for null items in nested lists",
+          "timestamp": "2026-10-21T11:02:50-04:00",
+          "tree_id": "ee94df04e45e7642a6ceaef92f3e58e22a0a43c7",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/08ecb97120b0117e0cec868b70cdb206d0a42ad6"
+        },
+        "date": 1792595114045,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 6274,
+            "range": "±2.6%",
+            "unit": "i/s",
+            "extra": "31.500k iterations in 5.021101s (159.40 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 1021,
+            "range": "±2.4%",
+            "unit": "i/s",
+            "extra": "5.151k iterations in 5.042674s (978.97 μs/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 2915,
+            "range": "±2.8%",
+            "unit": "i/s",
+            "extra": "14.612k iterations in 5.013138s (343.08 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 256.292,
+            "range": "±5.5%",
+            "unit": "i/s",
+            "extra": "1.296k iterations in 5.056726s (3.90 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 62.991,
+            "range": "±1.6%",
+            "unit": "i/s",
+            "extra": "320.000 iterations in 5.080051s (15.88 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 47.009,
+            "range": "±2.1%",
+            "unit": "i/s",
+            "extra": "236.000 iterations in 5.020368s (21.27 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 6522,
+            "range": "±2.7%",
+            "unit": "i/s",
+            "extra": "32.823k iterations in 5.032371s (153.32 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 7.97,
+            "range": "±0.0%",
+            "unit": "i/s",
+            "extra": "40.000 iterations in 5.018512s (125.46 ms/i)"
           }
         ]
       }
