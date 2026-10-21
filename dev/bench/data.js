@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792597482444,
+  "lastUpdate": 1792597563642,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -880,6 +880,86 @@ window.BENCHMARK_DATA = {
             "range": "±0.0%",
             "unit": "i/s",
             "extra": "31.000 iterations in 5.089326s (164.17 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "40c991b88acfad4367b35ad53c98822b880d66b3",
+          "message": "Merge pull request #5829 from rmosolgo/fix-sorbet-runtime-parent-result\n\nFix Sorbet lint error in Runtime#continue_value",
+          "timestamp": "2026-10-21T11:42:26-04:00",
+          "tree_id": "5256673f791e20294eab9ac867de670f79a7095b",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/40c991b88acfad4367b35ad53c98822b880d66b3"
+        },
+        "date": 1792597563437,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 3541,
+            "range": "±2.1%",
+            "unit": "i/s",
+            "extra": "17.748k iterations in 5.012282s (282.41 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 579.988,
+            "range": "±0.9%",
+            "unit": "i/s",
+            "extra": "2.907k iterations in 5.012170s (1.72 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 1670,
+            "range": "±3.5%",
+            "unit": "i/s",
+            "extra": "8.415k iterations in 5.039470s (598.87 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 146.928,
+            "range": "±2.7%",
+            "unit": "i/s",
+            "extra": "742.000 iterations in 5.050079s (6.81 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 32.334,
+            "range": "±3.1%",
+            "unit": "i/s",
+            "extra": "162.000 iterations in 5.010191s (30.93 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 24.228,
+            "range": "±4.1%",
+            "unit": "i/s",
+            "extra": "122.000 iterations in 5.035570s (41.28 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 3307,
+            "range": "±3.3%",
+            "unit": "i/s",
+            "extra": "16.856k iterations in 5.096404s (302.35 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 4.345,
+            "range": "±0.0%",
+            "unit": "i/s",
+            "extra": "22.000 iterations in 5.063261s (230.15 ms/i)"
           }
         ]
       }
