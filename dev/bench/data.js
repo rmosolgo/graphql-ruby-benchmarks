@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792580929258,
+  "lastUpdate": 1792581013254,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -400,6 +400,86 @@ window.BENCHMARK_DATA = {
             "range": "±0.0%",
             "unit": "i/s",
             "extra": "22.000 iterations in 5.173809s (235.17 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cf549a5644d073d49a2c8a273404e40ed9b84881",
+          "message": "Merge pull request #5775 from drhops/relation-connection-peek-next-page\n\nPeek an extra row so hasNextPage avoids a second query",
+          "timestamp": "2026-10-21T07:06:34-04:00",
+          "tree_id": "fd28978122fe405ffd8fff80d7163982d6f5c377",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/cf549a5644d073d49a2c8a273404e40ed9b84881"
+        },
+        "date": 1792581012839,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 3474,
+            "range": "±1.2%",
+            "unit": "i/s",
+            "extra": "17.493k iterations in 5.034947s (287.83 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 564.219,
+            "range": "±1.2%",
+            "unit": "i/s",
+            "extra": "2.860k iterations in 5.068955s (1.77 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 1545,
+            "range": "±3.9%",
+            "unit": "i/s",
+            "extra": "7.852k iterations in 5.081090s (647.11 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 134.989,
+            "range": "±4.4%",
+            "unit": "i/s",
+            "extra": "676.000 iterations in 5.007832s (7.41 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 31.842,
+            "range": "±3.1%",
+            "unit": "i/s",
+            "extra": "162.000 iterations in 5.087630s (31.41 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 24.036,
+            "range": "±4.2%",
+            "unit": "i/s",
+            "extra": "122.000 iterations in 5.075809s (41.60 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 3209,
+            "range": "±3.1%",
+            "unit": "i/s",
+            "extra": "16.300k iterations in 5.080054s (311.66 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 4.11,
+            "range": "±0.0%",
+            "unit": "i/s",
+            "extra": "21.000 iterations in 5.109176s (243.29 ms/i)"
           }
         ]
       }
