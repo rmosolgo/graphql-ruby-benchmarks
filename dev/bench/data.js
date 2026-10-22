@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792687263543,
+  "lastUpdate": 1792687833204,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -1280,6 +1280,86 @@ window.BENCHMARK_DATA = {
             "range": "±0.0%",
             "unit": "i/s",
             "extra": "21.000 iterations in 5.099996s (242.86 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "328da6c90286459bdfa20219936e2c3955e98b01",
+          "message": "Merge pull request #5797 from rmosolgo/fix-fields-will-merge-uneven-scopes\n\nMake FieldsWillMerge follow the spec for mutually exclusive fields and response shapes",
+          "timestamp": "2026-10-22T12:48:44-04:00",
+          "tree_id": "2203b218023ec4b810055a445fe2b4f9774b5b1f",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/328da6c90286459bdfa20219936e2c3955e98b01"
+        },
+        "date": 1792687832717,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 3919,
+            "range": "±0.8%",
+            "unit": "i/s",
+            "extra": "19.941k iterations in 5.088417s (255.17 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 638.367,
+            "range": "±0.9%",
+            "unit": "i/s",
+            "extra": "3.233k iterations in 5.064484s (1.57 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 1821,
+            "range": "±3.6%",
+            "unit": "i/s",
+            "extra": "9.231k iterations in 5.069572s (549.19 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 147.892,
+            "range": "±3.4%",
+            "unit": "i/s",
+            "extra": "750.000 iterations in 5.071261s (6.76 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 36.746,
+            "range": "±0.0%",
+            "unit": "i/s",
+            "extra": "186.000 iterations in 5.061780s (27.21 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 27.003,
+            "range": "±3.7%",
+            "unit": "i/s",
+            "extra": "136.000 iterations in 5.036415s (37.03 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 3651,
+            "range": "±2.8%",
+            "unit": "i/s",
+            "extra": "18.300k iterations in 5.012583s (273.91 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 4.691,
+            "range": "±0.0%",
+            "unit": "i/s",
+            "extra": "24.000 iterations in 5.116260s (213.18 ms/i)"
           }
         ]
       }
