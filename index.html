@@ -218,8 +218,8 @@
 
   function fmtValue(v, unit) {
     if (unit === "bytes") return fmtBytes(v);
-    if (unit === "i/s") return fmtNumber(v) + " i/s";
-    return Math.round(v).toLocaleString("en-US");
+    if (unit === "objects" || unit === "strings") return Math.round(v).toLocaleString("en-US");
+    return fmtNumber(v) + (unit ? " " + unit : "");
   }
 
   function fmtAxis(v, unit) {
@@ -254,8 +254,14 @@
 
   // ---- data ----
 
-  // Turn BENCHMARK_DATA into one group per benchmark:
-  // { name, slug, phase, runtime: [{commit, date, value}], memory: { memsize: { allocated: [...], retained: [...] }, ... } }
+  // Turn BENCHMARK_DATA into one group per benchmark. Every entry set is read
+  // (Runtime, Memory, Schema memory, ...), so new benchmarks show up on their own.
+  // { name, slug, phase,
+  //   runtime: [{commit, date, value}],
+  //   memory: { memsize: { allocated: [...], retained: [...] }, ... },
+  //   other: [{ label, unit, higherIsBetter, points }] }
+  var MEMORY_RE = /^(.*) - (allocated|retained) (memsize|objects|strings)$/;
+
   function buildGroups(data) {
     var groups = new Map();
     function group(name) {
@@ -263,29 +269,51 @@
         groups.set(name, {
           name: name,
           slug: slugify(name),
-          phase: name.split(" - ")[0],
+          phase: name.split(" - ")[0].split(" ")[0],
           runtime: [],
-          memory: {}
+          memory: {},
+          other: []
         });
       }
       return groups.get(name);
     }
+    function otherSeries(g, unit, higherIsBetter) {
+      for (var i = 0; i < g.other.length; i++) {
+        if (g.other[i].unit === unit) return g.other[i].points;
+      }
+      var series = { label: unit, unit: unit, higherIsBetter: higherIsBetter, points: [] };
+      g.other.push(series);
+      return series.points;
+    }
 
-    (data.entries.Runtime || []).forEach(function (entry) {
-      entry.benches.forEach(function (b) {
-        group(b.name).runtime.push({ commit: entry.commit, date: entry.date, value: b.value, unit: b.unit });
+    Object.keys(data.entries).forEach(function (setName) {
+      data.entries[setName].forEach(function (entry) {
+        entry.benches.forEach(function (b) {
+          var point = { commit: entry.commit, date: entry.date, value: b.value };
+          var m = MEMORY_RE.exec(b.name);
+          if (entry.tool === "rubymemory" && m) {
+            var kind = group(m[1]).memory[m[3]] || (group(m[1]).memory[m[3]] = { allocated: [], retained: [] });
+            kind[m[2]].push(point);
+          } else if (entry.tool === "rubyruntime" || b.unit === "i/s") {
+            group(b.name).runtime.push(point);
+          } else {
+            var bigger = entry.tool === "customBiggerIsBetter" ||
+              (entry.tool !== "customSmallerIsBetter" && /\/s$|per.?sec/i.test(b.unit));
+            otherSeries(group(b.name), b.unit, bigger).push(point);
+          }
+        });
       });
     });
 
-    var memRe = /^(.*) - (allocated|retained) (memsize|objects|strings)$/;
-    (data.entries.Memory || []).forEach(function (entry) {
-      entry.benches.forEach(function (b) {
-        var m = memRe.exec(b.name);
-        if (!m) return;
-        var g = group(m[1]);
-        var kind = g.memory[m[3]] || (g.memory[m[3]] = { allocated: [], retained: [] });
-        kind[m[2]].push({ commit: entry.commit, date: entry.date, value: b.value, unit: b.unit });
+    // Sets are recorded separately, so keep every series in date order
+    function byDate(a, b) { return a.date - b.date; }
+    groups.forEach(function (g) {
+      g.runtime.sort(byDate);
+      Object.keys(g.memory).forEach(function (k) {
+        g.memory[k].allocated.sort(byDate);
+        g.memory[k].retained.sort(byDate);
       });
+      g.other.forEach(function (o) { o.points.sort(byDate); });
     });
 
     return Array.from(groups.values());
@@ -321,11 +349,12 @@
   // series: [{ label, color, points: [{commit, date, value}] }] sharing the same commits in order
   function renderChart(plot, series, unit) {
     plot.textContent = "";
-    var base = series[0].points;
-    if (base.length === 0) {
+    series = series.filter(function (s) { return s.points.length > 0; });
+    if (series.length === 0) {
       plot.appendChild(el("div", "empty", "No data yet"));
       return;
     }
+    var base = series[0].points;
     var width = plot.clientWidth;
     var height = plot.clientHeight;
     var multi = series.length > 1;
@@ -539,17 +568,36 @@
     anchor.addEventListener("click", function (ev) { ev.stopPropagation(); });
     name.appendChild(anchor);
     summary.appendChild(name);
-    summary.appendChild(statBlock("rt", "Runtime", g.runtime, "i/s", true));
+    // Two stat columns: runtime (or another headline metric) and allocated memory
     var mem = g.memory.memsize;
-    summary.appendChild(statBlock("mem", "Allocated memory", mem ? mem.allocated : [], "bytes", false));
+    if (g.runtime.length) {
+      summary.appendChild(statBlock("rt", "Runtime", g.runtime, "i/s", true));
+    } else if (g.other.length) {
+      var o = g.other[0];
+      summary.appendChild(statBlock("rt", o.label, o.points, o.unit, o.higherIsBetter));
+    } else {
+      summary.appendChild(el("div", "stat rt"));
+    }
+    if (mem && mem.allocated.length) {
+      summary.appendChild(statBlock("mem", "Allocated memory", mem.allocated, "bytes", false));
+    } else {
+      summary.appendChild(el("div", "stat mem"));
+    }
     details.appendChild(summary);
 
     var charts = el("div", "charts");
     var cards = [];
-    cards.push(chartCard("Runtime", "iterations/sec, higher is better",
-      [{ label: "i/s", color: "var(--series-1)", points: g.runtime }], "i/s"));
+    if (g.runtime.length) {
+      cards.push(chartCard("Runtime", "iterations/sec, higher is better",
+        [{ label: "i/s", color: "var(--series-1)", points: g.runtime }], "i/s"));
+    }
+    g.other.forEach(function (o) {
+      cards.push(chartCard(o.label, o.higherIsBetter ? "higher is better" : "lower is better",
+        [{ label: o.label, color: "var(--series-1)", points: o.points }], o.unit));
+    });
     MEMORY_KINDS.forEach(function (kind) {
-      var data = g.memory[kind.key] || { allocated: [], retained: [] };
+      var data = g.memory[kind.key];
+      if (!data) return;
       cards.push(chartCard(kind.title, kind.unit + ", lower is better", [
         { label: "allocated", color: "var(--series-1)", points: data.allocated },
         { label: "retained", color: "var(--series-2)", points: data.retained }
@@ -602,7 +650,11 @@
       return;
     }
 
-    var runs = (data.entries.Runtime || []).length;
+    var commits = {};
+    Object.keys(data.entries).forEach(function (setName) {
+      data.entries[setName].forEach(function (entry) { commits[entry.commit.id] = true; });
+    });
+    var runs = Object.keys(commits).length;
     meta.textContent = "";
     meta.appendChild(document.createTextNode("Tracking "));
     var repo = el("a", null, "rmosolgo/graphql-ruby");
