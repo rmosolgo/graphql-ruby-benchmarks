@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792598846421,
+  "lastUpdate": 1792663887161,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -1040,6 +1040,86 @@ window.BENCHMARK_DATA = {
             "range": "±0.0%",
             "unit": "i/s",
             "extra": "22.000 iterations in 5.083822s (231.08 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "485c4540b188de8dce49a36583705be9289800ec",
+          "message": "Merge pull request #5831 from rmosolgo/claude/benchmark-flow-extensions-5e4269\n\nTrack retained memory of a large schema in benchmarks",
+          "timestamp": "2026-10-22T06:10:02-04:00",
+          "tree_id": "f51c5b2089a92d1338f8e5c6af919ace07326bc1",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/485c4540b188de8dce49a36583705be9289800ec"
+        },
+        "date": 1792663886879,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 4448,
+            "range": "±0.7%",
+            "unit": "i/s",
+            "extra": "22.250k iterations in 5.001758s (224.80 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 722.174,
+            "range": "±0.8%",
+            "unit": "i/s",
+            "extra": "3.621k iterations in 5.014027s (1.38 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 2149,
+            "range": "±2.9%",
+            "unit": "i/s",
+            "extra": "10.950k iterations in 5.096028s (465.39 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 179.606,
+            "range": "±1.7%",
+            "unit": "i/s",
+            "extra": "901.000 iterations in 5.016544s (5.57 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 41.495,
+            "range": "±0.0%",
+            "unit": "i/s",
+            "extra": "208.000 iterations in 5.012662s (24.10 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 31.438,
+            "range": "±3.2%",
+            "unit": "i/s",
+            "extra": "159.000 iterations in 5.057551s (31.81 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 4509,
+            "range": "±4.0%",
+            "unit": "i/s",
+            "extra": "22.914k iterations in 5.082097s (221.79 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 5.624,
+            "range": "±0.0%",
+            "unit": "i/s",
+            "extra": "29.000 iterations in 5.156132s (177.80 ms/i)"
           }
         ]
       }
