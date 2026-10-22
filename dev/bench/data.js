@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792663888840,
+  "lastUpdate": 1792663890420,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -2969,6 +2969,62 @@ window.BENCHMARK_DATA = {
           {
             "name": "execute - large result - retained strings",
             "value": 12,
+            "unit": "strings"
+          }
+        ]
+      }
+    ],
+    "Schema memory": [
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "485c4540b188de8dce49a36583705be9289800ec",
+          "message": "Merge pull request #5831 from rmosolgo/claude/benchmark-flow-extensions-5e4269\n\nTrack retained memory of a large schema in benchmarks",
+          "timestamp": "2026-10-22T06:10:02-04:00",
+          "tree_id": "f51c5b2089a92d1338f8e5c6af919ace07326bc1",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/485c4540b188de8dce49a36583705be9289800ec"
+        },
+        "date": 1792663890190,
+        "tool": "rubymemory",
+        "benches": [
+          {
+            "name": "build large schema - allocated memsize",
+            "value": 8884000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - retained memsize",
+            "value": 4676000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - allocated objects",
+            "value": 54664,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - retained objects",
+            "value": 13841,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "build large schema - retained strings",
+            "value": 50,
             "unit": "strings"
           }
         ]
