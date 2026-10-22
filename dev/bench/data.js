@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792688535613,
+  "lastUpdate": 1792699789805,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -1440,6 +1440,86 @@ window.BENCHMARK_DATA = {
             "range": "±0.0%",
             "unit": "i/s",
             "extra": "42.000 iterations in 5.001801s (119.09 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a523cb0cfc48001c800052992c68a0afd6000cca",
+          "message": "Merge pull request #5833 from rmosolgo/claude/build-failure-diagnosis-440200\n\nBuild the website with Ruby 3.3 so it gets RDoc 8",
+          "timestamp": "2026-10-22T16:08:23-04:00",
+          "tree_id": "e30c730b0f0e609ab28e9a80a2d430ef77d9f037",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/a523cb0cfc48001c800052992c68a0afd6000cca"
+        },
+        "date": 1792699789391,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 3528,
+            "range": "±1.2%",
+            "unit": "i/s",
+            "extra": "17.898k iterations in 5.072950s (283.44 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 575.453,
+            "range": "±1.0%",
+            "unit": "i/s",
+            "extra": "2.907k iterations in 5.051670s (1.74 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 1675,
+            "range": "±3.1%",
+            "unit": "i/s",
+            "extra": "8.379k iterations in 5.001581s (596.92 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 143.377,
+            "range": "±2.1%",
+            "unit": "i/s",
+            "extra": "728.000 iterations in 5.077515s (6.97 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 32.729,
+            "range": "±0.0%",
+            "unit": "i/s",
+            "extra": "165.000 iterations in 5.041345s (30.55 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 24.724,
+            "range": "±4.0%",
+            "unit": "i/s",
+            "extra": "124.000 iterations in 5.015270s (40.45 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 3424,
+            "range": "±2.9%",
+            "unit": "i/s",
+            "extra": "17.187k iterations in 5.019577s (292.06 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 4.414,
+            "range": "±0.0%",
+            "unit": "i/s",
+            "extra": "23.000 iterations in 5.210251s (226.53 ms/i)"
           }
         ]
       }
