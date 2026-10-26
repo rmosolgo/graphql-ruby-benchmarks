@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793012767963,
+  "lastUpdate": 1793012769922,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -5339,6 +5339,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "build large schema - retained memsize",
             "value": 4676000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - allocated objects",
+            "value": 52324,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - retained objects",
+            "value": 13841,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "build large schema - retained strings",
+            "value": 50,
+            "unit": "strings"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e2d74fa6939e35ef7f4ac46f4cbd89c2dc1b44cc",
+          "message": "Merge pull request #5838 from ydah/fix-connection-argument-analysis\n\nPreserve query limits when connection arguments fail",
+          "timestamp": "2026-10-26T07:03:06-04:00",
+          "tree_id": "4c03afdc585717e99810e95e8d1b8958c9c1b91d",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/e2d74fa6939e35ef7f4ac46f4cbd89c2dc1b44cc"
+        },
+        "date": 1793012769571,
+        "tool": "rubymemory",
+        "benches": [
+          {
+            "name": "build large schema - allocated memsize",
+            "value": 8790000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - retained memsize",
+            "value": 4675000,
             "unit": "bytes"
           },
           {
