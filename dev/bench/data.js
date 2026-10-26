@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793012855633,
+  "lastUpdate": 1793014736581,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -1680,6 +1680,86 @@ window.BENCHMARK_DATA = {
             "range": "±0.0%",
             "unit": "i/s",
             "extra": "22.000 iterations in 5.012167s (227.83 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fb13c82005695457a9cd7fdf6a9f72fb5f8940bd",
+          "message": "Merge pull request #5840 from ydah/fix-pagination-relation-limits\n\nKeep relation pagination within application-provided limits",
+          "timestamp": "2026-10-26T07:37:23-04:00",
+          "tree_id": "1faa6749a29db18ed8aded4c55235eccbfdf83ac",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/fb13c82005695457a9cd7fdf6a9f72fb5f8940bd"
+        },
+        "date": 1793014736129,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 4412,
+            "range": "±1.6%",
+            "unit": "i/s",
+            "extra": "22.150k iterations in 5.020742s (226.67 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 709.625,
+            "range": "±1.0%",
+            "unit": "i/s",
+            "extra": "3.550k iterations in 5.002644s (1.41 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 2250,
+            "range": "±2.9%",
+            "unit": "i/s",
+            "extra": "11.450k iterations in 5.089013s (444.46 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 185.874,
+            "range": "±2.2%",
+            "unit": "i/s",
+            "extra": "936.000 iterations in 5.035657s (5.38 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 38.715,
+            "range": "±2.6%",
+            "unit": "i/s",
+            "extra": "195.000 iterations in 5.036747s (25.83 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 35.795,
+            "range": "±2.8%",
+            "unit": "i/s",
+            "extra": "180.000 iterations in 5.028606s (27.94 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 4483,
+            "range": "±3.2%",
+            "unit": "i/s",
+            "extra": "22.464k iterations in 5.010546s (223.05 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 5.521,
+            "range": "±0.0%",
+            "unit": "i/s",
+            "extra": "28.000 iterations in 5.071656s (181.13 ms/i)"
           }
         ]
       }
