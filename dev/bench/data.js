@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793043419249,
+  "lastUpdate": 1793043420875,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -7334,6 +7334,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "build large schema - allocated objects",
             "value": 52324,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - retained objects",
+            "value": 13841,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "build large schema - retained strings",
+            "value": 50,
+            "unit": "strings"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4f06842eea64d5dea633b6c629fb0d70da67893e",
+          "message": "Merge pull request #5832 from rmosolgo/build-from-definition-perf\n\nMake Schema.from_definition about 45% faster on large schemas",
+          "timestamp": "2026-10-26T15:35:36-04:00",
+          "tree_id": "2b2470e8029cec5cbf76cfca4418138ef81e6440",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/4f06842eea64d5dea633b6c629fb0d70da67893e"
+        },
+        "date": 1793043420698,
+        "tool": "rubymemory",
+        "benches": [
+          {
+            "name": "build large schema - allocated memsize",
+            "value": 8774000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - retained memsize",
+            "value": 4673000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - allocated objects",
+            "value": 51058,
             "unit": "objects"
           },
           {
