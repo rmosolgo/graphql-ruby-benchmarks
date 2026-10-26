@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793057814112,
+  "lastUpdate": 1793057815619,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -7722,6 +7722,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "build large schema - allocated memsize",
             "value": 8774000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - retained memsize",
+            "value": 4673000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - allocated objects",
+            "value": 51058,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - retained objects",
+            "value": 13841,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "build large schema - retained strings",
+            "value": 50,
+            "unit": "strings"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e9a55cc4172cbd9929c62c7451df5cab1238131b",
+          "message": "Merge pull request #5825 from rmosolgo/claude/sorbet-build-from-definition\n\nMove Schema::BuildFromDefinition to typed: true",
+          "timestamp": "2026-10-26T19:35:29-04:00",
+          "tree_id": "f837cbb8abe6954880e280dc2c73bf557b6d8793",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/e9a55cc4172cbd9929c62c7451df5cab1238131b"
+        },
+        "date": 1793057815460,
+        "tool": "rubymemory",
+        "benches": [
+          {
+            "name": "build large schema - allocated memsize",
+            "value": 8773000,
             "unit": "bytes"
           },
           {
