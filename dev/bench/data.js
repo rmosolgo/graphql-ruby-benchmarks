@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793124203325,
+  "lastUpdate": 1793124206136,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -8518,6 +8518,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "build large schema - allocated memsize",
             "value": 8773000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - retained memsize",
+            "value": 4673000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - allocated objects",
+            "value": 51058,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - retained objects",
+            "value": 13841,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "build large schema - retained strings",
+            "value": 50,
+            "unit": "strings"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "edbd65fbe09f88f5bd22b32c42690dc99487cb9e",
+          "message": "Merge pull request #5852 from rmosolgo/claude/graphql-ruby-5851-replicate-a420c6\n\nSorbet: fix requires_ancestor annotations that break Tapioca RBIs, add consumer RBI check",
+          "timestamp": "2026-10-27T14:00:51-04:00",
+          "tree_id": "6a8f10434497630404cb55d369f3f768a56bd65c",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/edbd65fbe09f88f5bd22b32c42690dc99487cb9e"
+        },
+        "date": 1793124205633,
+        "tool": "rubymemory",
+        "benches": [
+          {
+            "name": "build large schema - allocated memsize",
+            "value": 8774000,
             "unit": "bytes"
           },
           {
