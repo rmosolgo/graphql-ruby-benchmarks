@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793287688406,
+  "lastUpdate": 1793287690978,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -10513,6 +10513,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "build large schema - retained memsize",
             "value": 4674000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - allocated objects",
+            "value": 51058,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - retained objects",
+            "value": 13841,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "build large schema - retained strings",
+            "value": 50,
+            "unit": "strings"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "179cadf17d95d2fd4d80ecc80072a0f71c3e7041",
+          "message": "Merge commit from fork\n\nFix unauthorized object handling in Execution::Next and legacy runtime",
+          "timestamp": "2026-10-29T11:26:43-04:00",
+          "tree_id": "5cb0619f3f3485368cd92c6ee70fed084e9edbe2",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/179cadf17d95d2fd4d80ecc80072a0f71c3e7041"
+        },
+        "date": 1793287690778,
+        "tool": "rubymemory",
+        "benches": [
+          {
+            "name": "build large schema - allocated memsize",
+            "value": 8774000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - retained memsize",
+            "value": 4673000,
             "unit": "bytes"
           },
           {
