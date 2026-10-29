@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793286787248,
+  "lastUpdate": 1793286789277,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -9712,6 +9712,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "build large schema - allocated memsize",
             "value": 8773000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - retained memsize",
+            "value": 4673000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - allocated objects",
+            "value": 51058,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - retained objects",
+            "value": 13841,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "build large schema - retained strings",
+            "value": 50,
+            "unit": "strings"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "16c59bdacd905341c449130e7bdda55f2daae1a1",
+          "message": "Merge pull request #5846 from ydah/fix-oversized-relation-cursors\n\nReject oversized relation cursors with execution errors",
+          "timestamp": "2026-10-29T11:11:40-04:00",
+          "tree_id": "8566130d765417fb0926103405f4fd6f6a5ad969",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/16c59bdacd905341c449130e7bdda55f2daae1a1"
+        },
+        "date": 1793286789000,
+        "tool": "rubymemory",
+        "benches": [
+          {
+            "name": "build large schema - allocated memsize",
+            "value": 8774000,
             "unit": "bytes"
           },
           {
