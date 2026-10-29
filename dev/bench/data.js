@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793287173073,
+  "lastUpdate": 1793287175292,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -10115,6 +10115,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "build large schema - retained memsize",
             "value": 4673000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - allocated objects",
+            "value": 51058,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - retained objects",
+            "value": 13841,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "build large schema - retained strings",
+            "value": 50,
+            "unit": "strings"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "25fe018960d5b88a37208d0008a5de3745fa34d0",
+          "message": "Merge pull request #5849 from ydah/fix-lexer-bom2\n\nIgnore byte order marks and clarify document parse errors",
+          "timestamp": "2026-10-29T11:18:06-04:00",
+          "tree_id": "5db783a1b45715f91ad46d9cbe1aea012ddd7337",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/25fe018960d5b88a37208d0008a5de3745fa34d0"
+        },
+        "date": 1793287174892,
+        "tool": "rubymemory",
+        "benches": [
+          {
+            "name": "build large schema - allocated memsize",
+            "value": 8774000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - retained memsize",
+            "value": 4674000,
             "unit": "bytes"
           },
           {
