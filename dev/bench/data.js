@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793286703268,
+  "lastUpdate": 1793286705139,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -9314,6 +9314,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "build large schema - allocated memsize",
             "value": 8774000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - retained memsize",
+            "value": 4673000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - allocated objects",
+            "value": 51058,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - retained objects",
+            "value": 13841,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "build large schema - retained strings",
+            "value": 50,
+            "unit": "strings"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6da4b368a226c083594908e0a0c1cbc8df37d815",
+          "message": "Merge pull request #5845 from yskttm/fix/raw-value-connection-lookahead\n\nFix RawValue connection responses in the legacy interpreter",
+          "timestamp": "2026-10-29T11:08:41-04:00",
+          "tree_id": "61e17e673d17176161b64613a67ecb878f2e4119",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/6da4b368a226c083594908e0a0c1cbc8df37d815"
+        },
+        "date": 1793286704970,
+        "tool": "rubymemory",
+        "benches": [
+          {
+            "name": "build large schema - allocated memsize",
+            "value": 8773000,
             "unit": "bytes"
           },
           {
