@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793372471492,
+  "lastUpdate": 1793372473606,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -11702,6 +11702,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "build large schema - allocated memsize",
             "value": 8774000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - retained memsize",
+            "value": 4673000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - allocated objects",
+            "value": 51058,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - retained objects",
+            "value": 13841,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "build large schema - retained strings",
+            "value": 50,
+            "unit": "strings"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "distinct": true,
+          "id": "f687397374ac4b23e0ae440ddd06446f6b20808d",
+          "message": "pro-1.30.5",
+          "timestamp": "2026-10-30T10:59:36-04:00",
+          "tree_id": "4db434c54f5a3c29988d272c2733feaf15c4da29",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/f687397374ac4b23e0ae440ddd06446f6b20808d"
+        },
+        "date": 1793372473151,
+        "tool": "rubymemory",
+        "benches": [
+          {
+            "name": "build large schema - allocated memsize",
+            "value": 8773000,
             "unit": "bytes"
           },
           {
