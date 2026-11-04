@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793801591105,
+  "lastUpdate": 1793801592926,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -12508,6 +12508,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "build large schema - allocated objects",
             "value": 51058,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - retained objects",
+            "value": 13841,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "build large schema - retained strings",
+            "value": 50,
+            "unit": "strings"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "84f4fd484002eb7cad427f73199742a94a0d8f0b",
+          "message": "Merge pull request #5823 from rmosolgo/fix-interface-directive-inheritance\n\nKeep repeated repeatable directives; remove dead interface directive lookup",
+          "timestamp": "2026-11-04T09:11:48-05:00",
+          "tree_id": "35de8e624209237ddc58eb27e8f5bc749bfec9f4",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/84f4fd484002eb7cad427f73199742a94a0d8f0b"
+        },
+        "date": 1793801592693,
+        "tool": "rubymemory",
+        "benches": [
+          {
+            "name": "build large schema - allocated memsize",
+            "value": 8773000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - retained memsize",
+            "value": 4673000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - allocated objects",
+            "value": 51053,
             "unit": "objects"
           },
           {
