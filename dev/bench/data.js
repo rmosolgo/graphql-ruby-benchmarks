@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793803438236,
+  "lastUpdate": 1793803742128,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -3520,6 +3520,86 @@ window.BENCHMARK_DATA = {
             "range": "±0.0%",
             "unit": "i/s",
             "extra": "140.000 iterations in 5.063288s (36.17 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3e56fc6fa3f2d7a98ed4974f778f3a889f27b8ab",
+          "message": "Merge pull request #5860 from ydah/fix-action-cable-topic-retention\n\nRemove empty ActionCable subscription topics",
+          "timestamp": "2026-11-04T09:47:40-05:00",
+          "tree_id": "2ee940b399b7baa27643f276c37fc63fe3181398",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/3e56fc6fa3f2d7a98ed4974f778f3a889f27b8ab"
+        },
+        "date": 1793803741933,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 3420,
+            "range": "±1.8%",
+            "unit": "i/s",
+            "extra": "17.340k iterations in 5.070158s (292.40 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 557.05,
+            "range": "±2.2%",
+            "unit": "i/s",
+            "extra": "2.805k iterations in 5.035454s (1.80 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 1643,
+            "range": "±3.5%",
+            "unit": "i/s",
+            "extra": "8.372k iterations in 5.096131s (608.71 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 138.173,
+            "range": "±4.3%",
+            "unit": "i/s",
+            "extra": "700.000 iterations in 5.066098s (7.24 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 31.196,
+            "range": "±3.2%",
+            "unit": "i/s",
+            "extra": "156.000 iterations in 5.000564s (32.05 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 99.557,
+            "range": "±3.0%",
+            "unit": "i/s",
+            "extra": "504.000 iterations in 5.062437s (10.04 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 3258,
+            "range": "±4.2%",
+            "unit": "i/s",
+            "extra": "16.513k iterations in 5.068447s (306.94 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 27.773,
+            "range": "±3.6%",
+            "unit": "i/s",
+            "extra": "140.000 iterations in 5.040904s (36.01 ms/i)"
           }
         ]
       }
