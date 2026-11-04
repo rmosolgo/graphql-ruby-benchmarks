@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793801676733,
+  "lastUpdate": 1793801679382,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -11215,6 +11215,270 @@ window.BENCHMARK_DATA = {
           {
             "name": "validate - fields will merge - retained strings",
             "value": 0,
+            "unit": "strings"
+          },
+          {
+            "name": "execute - introspection - allocated memsize",
+            "value": 991793,
+            "unit": "bytes"
+          },
+          {
+            "name": "execute - introspection - retained memsize",
+            "value": 600,
+            "unit": "bytes"
+          },
+          {
+            "name": "execute - introspection - allocated objects",
+            "value": 4925,
+            "unit": "objects"
+          },
+          {
+            "name": "execute - introspection - retained objects",
+            "value": 11,
+            "unit": "objects"
+          },
+          {
+            "name": "execute - introspection - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "execute - introspection - retained strings",
+            "value": 8,
+            "unit": "strings"
+          },
+          {
+            "name": "execute - small query on large schema - allocated memsize",
+            "value": 26784,
+            "unit": "bytes"
+          },
+          {
+            "name": "execute - small query on large schema - retained memsize",
+            "value": 280,
+            "unit": "bytes"
+          },
+          {
+            "name": "execute - small query on large schema - allocated objects",
+            "value": 237,
+            "unit": "objects"
+          },
+          {
+            "name": "execute - small query on large schema - retained objects",
+            "value": 5,
+            "unit": "objects"
+          },
+          {
+            "name": "execute - small query on large schema - allocated strings",
+            "value": 3,
+            "unit": "strings"
+          },
+          {
+            "name": "execute - small query on large schema - retained strings",
+            "value": 2,
+            "unit": "strings"
+          },
+          {
+            "name": "execute - large result - allocated memsize",
+            "value": 1879000,
+            "unit": "bytes"
+          },
+          {
+            "name": "execute - large result - retained memsize",
+            "value": 640,
+            "unit": "bytes"
+          },
+          {
+            "name": "execute - large result - allocated objects",
+            "value": 6414,
+            "unit": "objects"
+          },
+          {
+            "name": "execute - large result - retained objects",
+            "value": 14,
+            "unit": "objects"
+          },
+          {
+            "name": "execute - large result - allocated strings",
+            "value": 12,
+            "unit": "strings"
+          },
+          {
+            "name": "execute - large result - retained strings",
+            "value": 11,
+            "unit": "strings"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "946c7d07c95c5653025ee4ebe5ac144fa2d8e47f",
+          "message": "Merge pull request #5847 from ydah/fix-cr-comment-termination\n\nTerminate Ruby lexer comments at carriage returns",
+          "timestamp": "2026-11-04T09:13:04-05:00",
+          "tree_id": "9859574013664f850957fb00e26dd6c5ec9cec1f",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/946c7d07c95c5653025ee4ebe5ac144fa2d8e47f"
+        },
+        "date": 1793801678994,
+        "tool": "rubymemory",
+        "benches": [
+          {
+            "name": "parse - introspection - allocated memsize",
+            "value": 29104,
+            "unit": "bytes"
+          },
+          {
+            "name": "parse - introspection - retained memsize",
+            "value": 16624,
+            "unit": "bytes"
+          },
+          {
+            "name": "parse - introspection - allocated objects",
+            "value": 259,
+            "unit": "objects"
+          },
+          {
+            "name": "parse - introspection - retained objects",
+            "value": 181,
+            "unit": "objects"
+          },
+          {
+            "name": "parse - introspection - allocated strings",
+            "value": 27,
+            "unit": "strings"
+          },
+          {
+            "name": "parse - introspection - retained strings",
+            "value": 27,
+            "unit": "strings"
+          },
+          {
+            "name": "parse - big query - allocated memsize",
+            "value": 180744,
+            "unit": "bytes"
+          },
+          {
+            "name": "parse - big query - retained memsize",
+            "value": 99784,
+            "unit": "bytes"
+          },
+          {
+            "name": "parse - big query - allocated objects",
+            "value": 1622,
+            "unit": "objects"
+          },
+          {
+            "name": "parse - big query - retained objects",
+            "value": 1116,
+            "unit": "objects"
+          },
+          {
+            "name": "parse - big query - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "parse - big query - retained strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "validate - abstract fragments - allocated memsize",
+            "value": 40448,
+            "unit": "bytes"
+          },
+          {
+            "name": "validate - abstract fragments - retained memsize",
+            "value": 11336,
+            "unit": "bytes"
+          },
+          {
+            "name": "validate - abstract fragments - allocated objects",
+            "value": 432,
+            "unit": "objects"
+          },
+          {
+            "name": "validate - abstract fragments - retained objects",
+            "value": 76,
+            "unit": "objects"
+          },
+          {
+            "name": "validate - abstract fragments - allocated strings",
+            "value": 23,
+            "unit": "strings"
+          },
+          {
+            "name": "validate - abstract fragments - retained strings",
+            "value": 9,
+            "unit": "strings"
+          },
+          {
+            "name": "validate - big query - allocated memsize",
+            "value": 393128,
+            "unit": "bytes"
+          },
+          {
+            "name": "validate - big query - retained memsize",
+            "value": 94736,
+            "unit": "bytes"
+          },
+          {
+            "name": "validate - big query - allocated objects",
+            "value": 3334,
+            "unit": "objects"
+          },
+          {
+            "name": "validate - big query - retained objects",
+            "value": 322,
+            "unit": "objects"
+          },
+          {
+            "name": "validate - big query - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "validate - big query - retained strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "validate - fields will merge - allocated memsize",
+            "value": 2136000,
+            "unit": "bytes"
+          },
+          {
+            "name": "validate - fields will merge - retained memsize",
+            "value": 234960,
+            "unit": "bytes"
+          },
+          {
+            "name": "validate - fields will merge - allocated objects",
+            "value": 15155,
+            "unit": "objects"
+          },
+          {
+            "name": "validate - fields will merge - retained objects",
+            "value": 49,
+            "unit": "objects"
+          },
+          {
+            "name": "validate - fields will merge - allocated strings",
+            "value": 2,
+            "unit": "strings"
+          },
+          {
+            "name": "validate - fields will merge - retained strings",
+            "value": 1,
             "unit": "strings"
           },
           {
