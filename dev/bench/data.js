@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793801592926,
+  "lastUpdate": 1793801676733,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -3040,6 +3040,86 @@ window.BENCHMARK_DATA = {
             "range": "±3.3%",
             "unit": "i/s",
             "extra": "150.000 iterations in 5.005985s (33.37 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "946c7d07c95c5653025ee4ebe5ac144fa2d8e47f",
+          "message": "Merge pull request #5847 from ydah/fix-cr-comment-termination\n\nTerminate Ruby lexer comments at carriage returns",
+          "timestamp": "2026-11-04T09:13:04-05:00",
+          "tree_id": "9859574013664f850957fb00e26dd6c5ec9cec1f",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/946c7d07c95c5653025ee4ebe5ac144fa2d8e47f"
+        },
+        "date": 1793801676361,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 5431,
+            "range": "±1.4%",
+            "unit": "i/s",
+            "extra": "27.650k iterations in 5.090794s (184.12 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 888.829,
+            "range": "±1.2%",
+            "unit": "i/s",
+            "extra": "4.450k iterations in 5.006589s (1.13 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 2567,
+            "range": "±7.1%",
+            "unit": "i/s",
+            "extra": "12.880k iterations in 5.017931s (389.59 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 209.619,
+            "range": "±1.4%",
+            "unit": "i/s",
+            "extra": "1.060k iterations in 5.056803s (4.77 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 49.51,
+            "range": "±0.0%",
+            "unit": "i/s",
+            "extra": "248.000 iterations in 5.009126s (20.20 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 149.262,
+            "range": "±2.0%",
+            "unit": "i/s",
+            "extra": "756.000 iterations in 5.064910s (6.70 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 5646,
+            "range": "±9.6%",
+            "unit": "i/s",
+            "extra": "28.728k iterations in 5.087924s (177.11 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 47.746,
+            "range": "±2.1%",
+            "unit": "i/s",
+            "extra": "240.000 iterations in 5.026555s (20.94 ms/i)"
           }
         ]
       }
