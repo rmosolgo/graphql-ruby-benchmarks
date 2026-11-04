@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793801681500,
+  "lastUpdate": 1793801766101,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -3120,6 +3120,86 @@ window.BENCHMARK_DATA = {
             "range": "±2.1%",
             "unit": "i/s",
             "extra": "240.000 iterations in 5.026555s (20.94 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "836104a5b2663b4528b10b107f1ca8cc0432673f",
+          "message": "Merge pull request #5855 from rafayqayyum/fix-dev-error-handler-after-streaming\n\nWrite dev errors to the stream once a streaming response has started",
+          "timestamp": "2026-11-04T09:14:22-05:00",
+          "tree_id": "d4b939940eaa1457f4adb0287068067ecaa69498",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/836104a5b2663b4528b10b107f1ca8cc0432673f"
+        },
+        "date": 1793801765673,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 4168,
+            "range": "±0.7%",
+            "unit": "i/s",
+            "extra": "21.114k iterations in 5.065976s (239.93 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 670.626,
+            "range": "±1.2%",
+            "unit": "i/s",
+            "extra": "3.417k iterations in 5.095239s (1.49 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 2297,
+            "range": "±3.0%",
+            "unit": "i/s",
+            "extra": "11.650k iterations in 5.072004s (435.37 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 191.353,
+            "range": "±1.6%",
+            "unit": "i/s",
+            "extra": "969.000 iterations in 5.063929s (5.23 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 37.414,
+            "range": "±2.7%",
+            "unit": "i/s",
+            "extra": "189.000 iterations in 5.051530s (26.73 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 126.143,
+            "range": "±2.4%",
+            "unit": "i/s",
+            "extra": "636.000 iterations in 5.041915s (7.93 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 4711,
+            "range": "±3.1%",
+            "unit": "i/s",
+            "extra": "23.800k iterations in 5.052078s (212.27 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 34.022,
+            "range": "±2.9%",
+            "unit": "i/s",
+            "extra": "171.000 iterations in 5.026161s (29.39 ms/i)"
           }
         ]
       }
