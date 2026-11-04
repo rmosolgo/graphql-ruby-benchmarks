@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793801394949,
+  "lastUpdate": 1793801589046,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -2960,6 +2960,86 @@ window.BENCHMARK_DATA = {
             "range": "±3.1%",
             "unit": "i/s",
             "extra": "162.000 iterations in 5.007464s (30.91 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "84f4fd484002eb7cad427f73199742a94a0d8f0b",
+          "message": "Merge pull request #5823 from rmosolgo/fix-interface-directive-inheritance\n\nKeep repeated repeatable directives; remove dead interface directive lookup",
+          "timestamp": "2026-11-04T09:11:48-05:00",
+          "tree_id": "35de8e624209237ddc58eb27e8f5bc749bfec9f4",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/84f4fd484002eb7cad427f73199742a94a0d8f0b"
+        },
+        "date": 1793801588799,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 3807,
+            "range": "±2.3%",
+            "unit": "i/s",
+            "extra": "19.345k iterations in 5.081864s (262.70 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 613.536,
+            "range": "±1.6%",
+            "unit": "i/s",
+            "extra": "3.111k iterations in 5.070609s (1.63 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 1851,
+            "range": "±3.9%",
+            "unit": "i/s",
+            "extra": "9.333k iterations in 5.042714s (540.31 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 148.079,
+            "range": "±2.7%",
+            "unit": "i/s",
+            "extra": "750.000 iterations in 5.064877s (6.75 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 33.729,
+            "range": "±3.0%",
+            "unit": "i/s",
+            "extra": "171.000 iterations in 5.069867s (29.65 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 104.651,
+            "range": "±1.9%",
+            "unit": "i/s",
+            "extra": "530.000 iterations in 5.064430s (9.56 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 3606,
+            "range": "±3.8%",
+            "unit": "i/s",
+            "extra": "18.144k iterations in 5.031326s (277.30 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 29.964,
+            "range": "±3.3%",
+            "unit": "i/s",
+            "extra": "150.000 iterations in 5.005985s (33.37 ms/i)"
           }
         ]
       }
