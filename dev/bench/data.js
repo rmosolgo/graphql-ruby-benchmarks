@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793803745413,
+  "lastUpdate": 1793804090716,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -3600,6 +3600,86 @@ window.BENCHMARK_DATA = {
             "range": "±3.6%",
             "unit": "i/s",
             "extra": "140.000 iterations in 5.040904s (36.01 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "26095b793d521ccaede5db5caab21e58c0f92dff",
+          "message": "Merge pull request #5858 from ydah/fix-newline-escape-backslashes\n\nPreserve newlines after strings ending in escaped backslashes",
+          "timestamp": "2026-11-04T09:53:29-05:00",
+          "tree_id": "13a47cd2cd30f9c6b40fed94c41b415cadb038ac",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/26095b793d521ccaede5db5caab21e58c0f92dff"
+        },
+        "date": 1793804090372,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 5563,
+            "range": "±2.2%",
+            "unit": "i/s",
+            "extra": "28.305k iterations in 5.088459s (179.77 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 887.663,
+            "range": "±4.5%",
+            "unit": "i/s",
+            "extra": "4.459k iterations in 5.023304s (1.13 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 2533,
+            "range": "±4.1%",
+            "unit": "i/s",
+            "extra": "12.667k iterations in 5.000139s (394.74 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 204.635,
+            "range": "±3.9%",
+            "unit": "i/s",
+            "extra": "1.029k iterations in 5.028461s (4.89 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 45.946,
+            "range": "±4.4%",
+            "unit": "i/s",
+            "extra": "235.000 iterations in 5.114707s (21.76 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 145.216,
+            "range": "±2.8%",
+            "unit": "i/s",
+            "extra": "735.000 iterations in 5.061443s (6.89 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 4707,
+            "range": "±6.0%",
+            "unit": "i/s",
+            "extra": "23.868k iterations in 5.070245s (212.43 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 46.789,
+            "range": "±4.3%",
+            "unit": "i/s",
+            "extra": "236.000 iterations in 5.043974s (21.37 ms/i)"
           }
         ]
       }
