@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793801770303,
+  "lastUpdate": 1793801855201,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -3200,6 +3200,86 @@ window.BENCHMARK_DATA = {
             "range": "±2.9%",
             "unit": "i/s",
             "extra": "171.000 iterations in 5.026161s (29.39 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "835e7dee2559d1e7e4c9ee6a6cbd1618908c3f40",
+          "message": "Merge pull request #5857 from ydah/fix-parse-error-query\n\nPreserve query strings in parser stack overflow errors",
+          "timestamp": "2026-11-04T09:14:54-05:00",
+          "tree_id": "092d27b2fe3381a95e545930802a7827e1456060",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/835e7dee2559d1e7e4c9ee6a6cbd1618908c3f40"
+        },
+        "date": 1793801854778,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 3355,
+            "range": "±1.1%",
+            "unit": "i/s",
+            "extra": "17.066k iterations in 5.087090s (298.08 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 551.931,
+            "range": "±1.8%",
+            "unit": "i/s",
+            "extra": "2.805k iterations in 5.082159s (1.81 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 1621,
+            "range": "±3.1%",
+            "unit": "i/s",
+            "extra": "8.112k iterations in 5.003803s (616.84 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 141.645,
+            "range": "±2.1%",
+            "unit": "i/s",
+            "extra": "714.000 iterations in 5.040773s (7.06 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 32.144,
+            "range": "±3.1%",
+            "unit": "i/s",
+            "extra": "162.000 iterations in 5.039857s (31.11 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 100.688,
+            "range": "±2.0%",
+            "unit": "i/s",
+            "extra": "504.000 iterations in 5.005540s (9.93 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 3260,
+            "range": "±3.5%",
+            "unit": "i/s",
+            "extra": "16.550k iterations in 5.076211s (306.72 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 27.309,
+            "range": "±3.7%",
+            "unit": "i/s",
+            "extra": "138.000 iterations in 5.053247s (36.62 ms/i)"
           }
         ]
       }
