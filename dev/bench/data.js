@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793804095332,
+  "lastUpdate": 1793805297544,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -3680,6 +3680,86 @@ window.BENCHMARK_DATA = {
             "range": "±4.3%",
             "unit": "i/s",
             "extra": "236.000 iterations in 5.043974s (21.37 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "803066cfcaee029bf10f657ca88e24b07609a479",
+          "message": "Merge pull request #5811 from rmosolgo/single-pass-input-values-2\n\nCoerce input values in a single pass",
+          "timestamp": "2026-11-04T10:13:32-05:00",
+          "tree_id": "f39709c31b9782670128aaf682e8895d115f1959",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/803066cfcaee029bf10f657ca88e24b07609a479"
+        },
+        "date": 1793805297224,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 3303,
+            "range": "±1.4%",
+            "unit": "i/s",
+            "extra": "16.728k iterations in 5.064173s (302.74 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 537.365,
+            "range": "±0.9%",
+            "unit": "i/s",
+            "extra": "2.703k iterations in 5.030104s (1.86 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 1504,
+            "range": "±4.6%",
+            "unit": "i/s",
+            "extra": "7.644k iterations in 5.081434s (664.76 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 115.558,
+            "range": "±2.6%",
+            "unit": "i/s",
+            "extra": "588.000 iterations in 5.088346s (8.65 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 27.687,
+            "range": "±0.0%",
+            "unit": "i/s",
+            "extra": "140.000 iterations in 5.056543s (36.12 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 85.185,
+            "range": "±2.3%",
+            "unit": "i/s",
+            "extra": "432.000 iterations in 5.071309s (11.74 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 3035,
+            "range": "±4.0%",
+            "unit": "i/s",
+            "extra": "15.235k iterations in 5.019803s (329.49 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 25.659,
+            "range": "±3.9%",
+            "unit": "i/s",
+            "extra": "130.000 iterations in 5.066446s (38.97 ms/i)"
           }
         ]
       }
