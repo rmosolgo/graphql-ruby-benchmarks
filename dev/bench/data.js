@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793894793442,
+  "lastUpdate": 1793894794986,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -21269,6 +21269,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/352de999d1406c6344aa5cbd86b201280d225d69"
         },
         "date": 1793894636391,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 20.62,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.55,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 33.03,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "50d89bf0091124ce0926aa1c7f95aa57caffc25f",
+          "message": "Merge pull request #5878 from rmosolgo/claude/fix-oneof-undeclared-var-f69049\n\nFix NoMethodError in OneOfInputObjectsAreValid for undeclared variables",
+          "timestamp": "2026-11-05T11:02:19-05:00",
+          "tree_id": "8b16bba634ec514da1e10912f23b158d5d673d79",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/50d89bf0091124ce0926aa1c7f95aa57caffc25f"
+        },
+        "date": 1793894794811,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
