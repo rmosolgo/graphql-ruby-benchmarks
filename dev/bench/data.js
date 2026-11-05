@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793911411819,
+  "lastUpdate": 1793911413607,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -22595,6 +22595,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/97f2813840f620668dd1ea581d7f376d37b3a60f"
         },
         "date": 1793911317788,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 24.58,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.55,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 33.02,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2e8473ea7d0d348d2afa866c511e4d1a67a84b66",
+          "message": "Merge pull request #5881 from thomasklemm/thomasklemm/c-lexer-bom-scanner-rule\n\nMatch byte order marks with their own rule in the C lexer",
+          "timestamp": "2026-11-05T15:42:02-05:00",
+          "tree_id": "6fb902bf657134b30f32768938fb8baa24b073a4",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/2e8473ea7d0d348d2afa866c511e4d1a67a84b66"
+        },
+        "date": 1793911413414,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
