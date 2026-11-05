@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793911318194,
+  "lastUpdate": 1793911408594,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -4880,6 +4880,86 @@ window.BENCHMARK_DATA = {
             "range": "±3.2%",
             "unit": "i/s",
             "extra": "159.000 iterations in 5.022338s (31.59 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2e8473ea7d0d348d2afa866c511e4d1a67a84b66",
+          "message": "Merge pull request #5881 from thomasklemm/thomasklemm/c-lexer-bom-scanner-rule\n\nMatch byte order marks with their own rule in the C lexer",
+          "timestamp": "2026-11-05T15:42:02-05:00",
+          "tree_id": "6fb902bf657134b30f32768938fb8baa24b073a4",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/2e8473ea7d0d348d2afa866c511e4d1a67a84b66"
+        },
+        "date": 1793911408373,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 4019,
+            "range": "±2.9%",
+            "unit": "i/s",
+            "extra": "20.400k iterations in 5.076004s (248.82 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 667.748,
+            "range": "±1.3%",
+            "unit": "i/s",
+            "extra": "3.366k iterations in 5.040822s (1.50 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 1647,
+            "range": "±3.0%",
+            "unit": "i/s",
+            "extra": "8.313k iterations in 5.047419s (607.17 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 140.381,
+            "range": "±2.8%",
+            "unit": "i/s",
+            "extra": "702.000 iterations in 5.000662s (7.12 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 31.722,
+            "range": "±3.2%",
+            "unit": "i/s",
+            "extra": "159.000 iterations in 5.012292s (31.52 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 99.686,
+            "range": "±3.0%",
+            "unit": "i/s",
+            "extra": "504.000 iterations in 5.055870s (10.03 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 3278,
+            "range": "±2.8%",
+            "unit": "i/s",
+            "extra": "16.400k iterations in 5.002482s (305.03 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 27.98,
+            "range": "±3.6%",
+            "unit": "i/s",
+            "extra": "140.000 iterations in 5.003608s (35.74 ms/i)"
           }
         ]
       }
