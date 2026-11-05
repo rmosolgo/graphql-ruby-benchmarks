@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793911316365,
+  "lastUpdate": 1793911318194,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -22173,6 +22173,50 @@ window.BENCHMARK_DATA = {
           {
             "name": "sorbet - typed calls",
             "value": 33.03,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "97f2813840f620668dd1ea581d7f376d37b3a60f",
+          "message": "Merge pull request #5880 from thomasklemm/thomasklemm/lexer-advance-without-loop\n\nSkip comments in the Ruby lexer without `loop`",
+          "timestamp": "2026-11-05T15:39:10-05:00",
+          "tree_id": "f0715fb2c4be862397f174f99a1e3d6628348a19",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/97f2813840f620668dd1ea581d7f376d37b3a60f"
+        },
+        "date": 1793911317788,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 24.58,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.55,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 33.02,
             "unit": "%"
           }
         ]
