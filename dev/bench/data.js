@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793894138683,
+  "lastUpdate": 1793894140430,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -19943,6 +19943,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/6b4bef25229b823cc950bf02977ff027db8412b7"
         },
         "date": 1793879085502,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 20.62,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.55,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 33.03,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aaae57a1ebb8e21d69f7f878e0bd359c4e7fb01e",
+          "message": "Merge pull request #5877 from thomasklemm/thomasklemm/c-parser-windows-token-names\n\nFix graphql-c_parser compilation on Windows (MinGW)",
+          "timestamp": "2026-11-05T10:54:10-05:00",
+          "tree_id": "727f340eae5b48735adff02cb99f2771077c16a0",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/aaae57a1ebb8e21d69f7f878e0bd359c4e7fb01e"
+        },
+        "date": 1793894140126,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
