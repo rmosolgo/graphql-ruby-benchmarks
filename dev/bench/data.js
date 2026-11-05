@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793878285595,
+  "lastUpdate": 1793878287579,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -19059,6 +19059,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/29d42339e75109e324877938f855791a0539c307"
         },
         "date": 1793878192573,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 20.62,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.55,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 33.03,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a2cb534e224fd338287f9508717faa9c125dc039",
+          "message": "Merge pull request #5874 from rmosolgo/dependabot/github_actions/zizmorcore/zizmor-action-0.8.0\n\nBump zizmorcore/zizmor-action from 0.6.4 to 0.8.0",
+          "timestamp": "2026-11-05T06:26:58-05:00",
+          "tree_id": "aa9c883c09917546be85a950f1760706e25a5839",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/a2cb534e224fd338287f9508717faa9c125dc039"
+        },
+        "date": 1793878287123,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
