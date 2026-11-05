@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793878191056,
+  "lastUpdate": 1793878193007,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -18617,6 +18617,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/b697443d9c15c9e9018e4e685c3d54630c1f1458"
         },
         "date": 1793812291014,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 20.62,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.55,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 33.03,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "29d42339e75109e324877938f855791a0539c307",
+          "message": "Merge pull request #5873 from rmosolgo/dependabot/github_actions/shogo82148/actions-setup-redis-1.60.0\n\nBump shogo82148/actions-setup-redis from 1.58.1 to 1.60.0",
+          "timestamp": "2026-11-05T06:26:48-05:00",
+          "tree_id": "97897220adf5fbfda5e36957d9af695fcd2ea747",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/29d42339e75109e324877938f855791a0539c307"
+        },
+        "date": 1793878192573,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
