@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793879082725,
+  "lastUpdate": 1793879084245,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -19259,6 +19259,60 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/a2cb534e224fd338287f9508717faa9c125dc039"
         },
         "date": 1793878285158,
+        "tool": "rubymemory",
+        "benches": [
+          {
+            "name": "build large schema - allocated memsize",
+            "value": 8773000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - retained memsize",
+            "value": 4673000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - allocated objects",
+            "value": 51053,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - retained objects",
+            "value": 13841,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "build large schema - retained strings",
+            "value": 50,
+            "unit": "strings"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6b4bef25229b823cc950bf02977ff027db8412b7",
+          "message": "Merge pull request #5875 from rmosolgo/dependabot/github_actions/ruby/setup-ruby-1.336.0\n\nBump ruby/setup-ruby from 1.335.0 to 1.336.0",
+          "timestamp": "2026-11-05T06:43:18-05:00",
+          "tree_id": "9a52c35252cb84ef42e8c049e965270eaded2000",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/6b4bef25229b823cc950bf02977ff027db8412b7"
+        },
+        "date": 1793879084073,
         "tool": "rubymemory",
         "benches": [
           {
