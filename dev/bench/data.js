@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793991331115,
+  "lastUpdate": 1793991332939,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -23479,6 +23479,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/e85ec724e34aeecbee62ee2aa2bee703d61cecc7"
         },
         "date": 1793991200597,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 24.58,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.55,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 33.02,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fb6896c38dee6e5bdda9d9ff71c266f805028193",
+          "message": "Merge pull request #5884 from ydah/combine-lexer-blank-bom\n\nShare the C lexer action for blanks and byte order marks",
+          "timestamp": "2026-11-06T13:54:03-05:00",
+          "tree_id": "5c415f7887e68904eecfbcf944aa3811a993d28e",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/fb6896c38dee6e5bdda9d9ff71c266f805028193"
+        },
+        "date": 1793991332544,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
