@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793991200955,
+  "lastUpdate": 1793991327271,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -5040,6 +5040,86 @@ window.BENCHMARK_DATA = {
             "range": "±3.9%",
             "unit": "i/s",
             "extra": "260.000 iterations in 5.030279s (19.35 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fb6896c38dee6e5bdda9d9ff71c266f805028193",
+          "message": "Merge pull request #5884 from ydah/combine-lexer-blank-bom\n\nShare the C lexer action for blanks and byte order marks",
+          "timestamp": "2026-11-06T13:54:03-05:00",
+          "tree_id": "5c415f7887e68904eecfbcf944aa3811a993d28e",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/fb6896c38dee6e5bdda9d9ff71c266f805028193"
+        },
+        "date": 1793991326855,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 4045,
+            "range": "±1.6%",
+            "unit": "i/s",
+            "extra": "20.500k iterations in 5.067704s (247.21 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 638.975,
+            "range": "±5.0%",
+            "unit": "i/s",
+            "extra": "3.234k iterations in 5.061232s (1.57 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 1840,
+            "range": "±2.4%",
+            "unit": "i/s",
+            "extra": "9.384k iterations in 5.099218s (543.39 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 153.065,
+            "range": "±1.3%",
+            "unit": "i/s",
+            "extra": "780.000 iterations in 5.095885s (6.53 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 30.568,
+            "range": "±3.3%",
+            "unit": "i/s",
+            "extra": "153.000 iterations in 5.005241s (32.71 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 99.791,
+            "range": "±2.0%",
+            "unit": "i/s",
+            "extra": "504.000 iterations in 5.050559s (10.02 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 3901,
+            "range": "±2.4%",
+            "unit": "i/s",
+            "extra": "19.800k iterations in 5.076130s (256.37 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 26.949,
+            "range": "±0.0%",
+            "unit": "i/s",
+            "extra": "136.000 iterations in 5.046544s (37.11 ms/i)"
           }
         ]
       }
