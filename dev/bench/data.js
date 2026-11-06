@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793991199291,
+  "lastUpdate": 1793991200955,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -23037,6 +23037,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/2e8473ea7d0d348d2afa866c511e4d1a67a84b66"
         },
         "date": 1793911413414,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 24.58,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.55,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 33.02,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e85ec724e34aeecbee62ee2aa2bee703d61cecc7",
+          "message": "Merge pull request #5882 from ydah/test-lexer-comment-boundaries\n\nTest lexer comment boundaries and token limits",
+          "timestamp": "2026-11-06T13:50:53-05:00",
+          "tree_id": "3825ff0dfa864740a1ad2b3fe48461bfb53e22e1",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/e85ec724e34aeecbee62ee2aa2bee703d61cecc7"
+        },
+        "date": 1793991200597,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
