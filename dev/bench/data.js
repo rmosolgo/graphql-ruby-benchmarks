@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793991530010,
+  "lastUpdate": 1793991616981,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -5200,6 +5200,86 @@ window.BENCHMARK_DATA = {
             "range": "±0.0%",
             "unit": "i/s",
             "extra": "144.000 iterations in 5.010237s (34.79 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ac124f68e7164f4566b264580a04660bfce4195c",
+          "message": "Merge pull request #5887 from ydah/fix-lexer-token-limit-position\n\nFix TypeError when leading comments exhaust the token limit",
+          "timestamp": "2026-11-06T13:58:04-05:00",
+          "tree_id": "d4cca40a30e98e7b655a37e619b819db2453f3a5",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/ac124f68e7164f4566b264580a04660bfce4195c"
+        },
+        "date": 1793991616468,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 5132,
+            "range": "±1.0%",
+            "unit": "i/s",
+            "extra": "25.800k iterations in 5.027319s (194.86 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 823.947,
+            "range": "±1.1%",
+            "unit": "i/s",
+            "extra": "4.150k iterations in 5.036731s (1.21 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 2328,
+            "range": "±2.3%",
+            "unit": "i/s",
+            "extra": "11.850k iterations in 5.091175s (429.64 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 188.998,
+            "range": "±2.1%",
+            "unit": "i/s",
+            "extra": "954.000 iterations in 5.047673s (5.29 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 37.227,
+            "range": "±2.7%",
+            "unit": "i/s",
+            "extra": "189.000 iterations in 5.077013s (26.86 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 121.279,
+            "range": "±2.5%",
+            "unit": "i/s",
+            "extra": "612.000 iterations in 5.046205s (8.25 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 4760,
+            "range": "±3.2%",
+            "unit": "i/s",
+            "extra": "23.808k iterations in 5.001827s (210.09 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 32.37,
+            "range": "±3.1%",
+            "unit": "i/s",
+            "extra": "162.000 iterations in 5.004691s (30.89 ms/i)"
           }
         ]
       }
