@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793991809748,
+  "lastUpdate": 1793991811343,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -24805,6 +24805,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/ac124f68e7164f4566b264580a04660bfce4195c"
         },
         "date": 1793991622577,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 24.58,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.55,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 33.02,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "84cac50747e17706d88710bc0f28fc6714599127",
+          "message": "Merge pull request #5891 from fuzzyrichie/fix-next-resolver-rescue-from-field\n\nPass field, arguments, and object to rescue_from handlers for Resolver errors under Execution::Next",
+          "timestamp": "2026-11-06T14:02:03-05:00",
+          "tree_id": "e3dd841fae3b4da342593e8227a000873807cfa0",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/84cac50747e17706d88710bc0f28fc6714599127"
+        },
+        "date": 1793991811167,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
