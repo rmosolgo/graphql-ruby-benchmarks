@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793991621046,
+  "lastUpdate": 1793991623082,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -24363,6 +24363,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/45e9b5e051cfdeb85d80e26a3e91f4a5bf0dfec9"
         },
         "date": 1793991529846,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 24.58,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.55,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 33.02,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ac124f68e7164f4566b264580a04660bfce4195c",
+          "message": "Merge pull request #5887 from ydah/fix-lexer-token-limit-position\n\nFix TypeError when leading comments exhaust the token limit",
+          "timestamp": "2026-11-06T13:58:04-05:00",
+          "tree_id": "d4cca40a30e98e7b655a37e619b819db2453f3a5",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/ac124f68e7164f4566b264580a04660bfce4195c"
+        },
+        "date": 1793991622577,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
