@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794048386527,
+  "lastUpdate": 1794048388399,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -25689,6 +25689,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/e8d66ac8cac9b5eb9dda9616c12610a1457e6edc"
         },
         "date": 1794048285719,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 24.58,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.55,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 33.02,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "79eb4f948c5bbf9485c572b761cd171478f80c94",
+          "message": "Merge pull request #5883 from ydah/document-lexer-match-state\n\nDocument lexer match state for unknown characters",
+          "timestamp": "2026-11-07T05:44:55-05:00",
+          "tree_id": "98349398dd5a6ebe846888842bfaef0106be2415",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/79eb4f948c5bbf9485c572b761cd171478f80c94"
+        },
+        "date": 1794048388016,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
