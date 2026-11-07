@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794048284517,
+  "lastUpdate": 1794048286028,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -25247,6 +25247,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/84cac50747e17706d88710bc0f28fc6714599127"
         },
         "date": 1793991811167,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 24.58,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.55,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 33.02,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e8d66ac8cac9b5eb9dda9616c12610a1457e6edc",
+          "message": "Merge pull request #5890 from ydah/fix-c-parser-tokenize-helper\n\nFix NoMethodError in CParser.tokenize_with_c",
+          "timestamp": "2026-11-07T05:43:16-05:00",
+          "tree_id": "12bdac6c847dcdb1b434a53fae42b821e206a888",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/e8d66ac8cac9b5eb9dda9616c12610a1457e6edc"
+        },
+        "date": 1794048285719,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
