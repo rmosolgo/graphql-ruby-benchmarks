@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794252757629,
+  "lastUpdate": 1794252759581,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -27899,6 +27899,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/e692b55ac6e7ca19c9bcab5cdc7dc81e84b2edc3"
         },
         "date": 1794252064719,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 24.58,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.55,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 33.01,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "33d198f9ca886940e0d95f61da9e8516bac3b406",
+          "message": "Merge commit from fork\n\nExecution::Next: reject invalid queries even with validate: false",
+          "timestamp": "2026-11-09T14:31:00-05:00",
+          "tree_id": "c38b3733ece2e9326ebf3f4f65f8007a5235e982",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/33d198f9ca886940e0d95f61da9e8516bac3b406"
+        },
+        "date": 1794252759149,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
