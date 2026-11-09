@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794251921952,
+  "lastUpdate": 1794251923715,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -27015,6 +27015,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/d340c948a9ba1a94d636196de1106670492bcd10"
         },
         "date": 1794251839694,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 24.58,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.55,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 33.02,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "32647a5e8aeb1c9cf522b04465521ffbf5372697",
+          "message": "Merge commit from fork\n\nQueryComplexity: don't let negative values reduce sibling costs",
+          "timestamp": "2026-11-09T14:16:35-05:00",
+          "tree_id": "49359e16dc740b3057512d2a18d41b475ffb8a38",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/32647a5e8aeb1c9cf522b04465521ffbf5372697"
+        },
+        "date": 1794251923362,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
