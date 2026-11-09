@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794252062875,
+  "lastUpdate": 1794252065196,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -27477,6 +27477,50 @@ window.BENCHMARK_DATA = {
           {
             "name": "sorbet - typed calls",
             "value": 33.02,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e692b55ac6e7ca19c9bcab5cdc7dc81e84b2edc3",
+          "message": "Merge commit from fork\n\nExpand each fragment once per selection set",
+          "timestamp": "2026-11-09T14:19:27-05:00",
+          "tree_id": "19c4ab75109e4afec1c7ddd13d010a1d91c061f3",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/e692b55ac6e7ca19c9bcab5cdc7dc81e84b2edc3"
+        },
+        "date": 1794252064719,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 24.58,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.55,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 33.01,
             "unit": "%"
           }
         ]
