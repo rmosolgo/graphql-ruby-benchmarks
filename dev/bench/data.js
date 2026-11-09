@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794252857121,
+  "lastUpdate": 1794253513090,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -6000,6 +6000,86 @@ window.BENCHMARK_DATA = {
             "range": "±3.8%",
             "unit": "i/s",
             "extra": "134.000 iterations in 5.074748s (37.87 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e29964fca332c8e5452c88e67f24091ea79d68ac",
+          "message": "Merge pull request #5892 from rmosolgo/claude/ci-failure-fix-af7137\n\nFix CI: Sorbet errors and Ruby 2.7 Regexp.timeout spec",
+          "timestamp": "2026-11-09T14:43:47-05:00",
+          "tree_id": "e385e9545911ead9eb4da726ad148c50c69a47d4",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/e29964fca332c8e5452c88e67f24091ea79d68ac"
+        },
+        "date": 1794253512893,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 4010,
+            "range": "±2.8%",
+            "unit": "i/s",
+            "extra": "20.400k iterations in 5.087510s (249.39 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 669.672,
+            "range": "±4.2%",
+            "unit": "i/s",
+            "extra": "3.400k iterations in 5.077112s (1.49 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 1637,
+            "range": "±3.2%",
+            "unit": "i/s",
+            "extra": "8.320k iterations in 5.082317s (610.86 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 145.542,
+            "range": "±1.4%",
+            "unit": "i/s",
+            "extra": "728.000 iterations in 5.002009s (6.87 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 32.604,
+            "range": "±3.1%",
+            "unit": "i/s",
+            "extra": "165.000 iterations in 5.060767s (30.67 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 102.291,
+            "range": "±2.0%",
+            "unit": "i/s",
+            "extra": "513.000 iterations in 5.015107s (9.78 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 3405,
+            "range": "±3.9%",
+            "unit": "i/s",
+            "extra": "17.034k iterations in 5.003222s (293.72 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 27.677,
+            "range": "±0.0%",
+            "unit": "i/s",
+            "extra": "140.000 iterations in 5.058262s (36.13 ms/i)"
           }
         ]
       }
