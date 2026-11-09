@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794251749709,
+  "lastUpdate": 1794251751810,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -26131,6 +26131,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/79eb4f948c5bbf9485c572b761cd171478f80c94"
         },
         "date": 1794048388016,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 24.58,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.55,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 33.02,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f1a95c3f69dac64f7bda3981a184be63424d1f05",
+          "message": "Merge commit from fork\n\nExec-next: authorize resolvers that only override .authorized?",
+          "timestamp": "2026-11-09T14:14:06-05:00",
+          "tree_id": "9b54638ef31802e691d03df466f4e63bc0f12dab",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/f1a95c3f69dac64f7bda3981a184be63424d1f05"
+        },
+        "date": 1794251751276,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
