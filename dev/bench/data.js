@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794348814213,
+  "lastUpdate": 1794348816322,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -29225,6 +29225,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/e29964fca332c8e5452c88e67f24091ea79d68ac"
         },
         "date": 1794253517730,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 24.58,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.55,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 33.01,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "46d8a9ce5d98e006009789976f5af07cd11e492e",
+          "message": "Merge pull request #5894 from dduugg/relay-behaviors-interface-requires-ancestor\n\nSorbet: allow interface modules to include ConnectionBehaviors and EdgeBehaviors",
+          "timestamp": "2026-11-10T17:10:37-05:00",
+          "tree_id": "ac24dd5190c0cff9607c803836d9584254c51275",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/46d8a9ce5d98e006009789976f5af07cd11e492e"
+        },
+        "date": 1794348815826,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
