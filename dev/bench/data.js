@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794253517908,
+  "lastUpdate": 1794348809977,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -6080,6 +6080,86 @@ window.BENCHMARK_DATA = {
             "range": "±0.0%",
             "unit": "i/s",
             "extra": "140.000 iterations in 5.058262s (36.13 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "46d8a9ce5d98e006009789976f5af07cd11e492e",
+          "message": "Merge pull request #5894 from dduugg/relay-behaviors-interface-requires-ancestor\n\nSorbet: allow interface modules to include ConnectionBehaviors and EdgeBehaviors",
+          "timestamp": "2026-11-10T17:10:37-05:00",
+          "tree_id": "ac24dd5190c0cff9607c803836d9584254c51275",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/46d8a9ce5d98e006009789976f5af07cd11e492e"
+        },
+        "date": 1794348809464,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 5139,
+            "range": "±1.4%",
+            "unit": "i/s",
+            "extra": "26.100k iterations in 5.078566s (194.58 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 827.187,
+            "range": "±2.5%",
+            "unit": "i/s",
+            "extra": "4.165k iterations in 5.035136s (1.21 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 2260,
+            "range": "±2.6%",
+            "unit": "i/s",
+            "extra": "11.500k iterations in 5.088320s (442.46 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 188.834,
+            "range": "±2.1%",
+            "unit": "i/s",
+            "extra": "950.000 iterations in 5.030870s (5.30 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 37.273,
+            "range": "±2.7%",
+            "unit": "i/s",
+            "extra": "189.000 iterations in 5.070686s (26.83 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 119.252,
+            "range": "±3.4%",
+            "unit": "i/s",
+            "extra": "600.000 iterations in 5.031376s (8.39 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 4783,
+            "range": "±4.0%",
+            "unit": "i/s",
+            "extra": "24.111k iterations in 5.040517s (209.05 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 33.161,
+            "range": "±3.0%",
+            "unit": "i/s",
+            "extra": "168.000 iterations in 5.066202s (30.16 ms/i)"
           }
         ]
       }
