@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794414336388,
+  "lastUpdate": 1794414338439,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -25513,6 +25513,270 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/ea9f1740ebdb02fd3713b94b9c50d1ee285125a0"
         },
         "date": 1794414085241,
+        "tool": "rubymemory",
+        "benches": [
+          {
+            "name": "parse - introspection - allocated memsize",
+            "value": 29168,
+            "unit": "bytes"
+          },
+          {
+            "name": "parse - introspection - retained memsize",
+            "value": 16688,
+            "unit": "bytes"
+          },
+          {
+            "name": "parse - introspection - allocated objects",
+            "value": 259,
+            "unit": "objects"
+          },
+          {
+            "name": "parse - introspection - retained objects",
+            "value": 181,
+            "unit": "objects"
+          },
+          {
+            "name": "parse - introspection - allocated strings",
+            "value": 27,
+            "unit": "strings"
+          },
+          {
+            "name": "parse - introspection - retained strings",
+            "value": 27,
+            "unit": "strings"
+          },
+          {
+            "name": "parse - big query - allocated memsize",
+            "value": 180808,
+            "unit": "bytes"
+          },
+          {
+            "name": "parse - big query - retained memsize",
+            "value": 99848,
+            "unit": "bytes"
+          },
+          {
+            "name": "parse - big query - allocated objects",
+            "value": 1622,
+            "unit": "objects"
+          },
+          {
+            "name": "parse - big query - retained objects",
+            "value": 1116,
+            "unit": "objects"
+          },
+          {
+            "name": "parse - big query - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "parse - big query - retained strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "validate - abstract fragments - allocated memsize",
+            "value": 42616,
+            "unit": "bytes"
+          },
+          {
+            "name": "validate - abstract fragments - retained memsize",
+            "value": 11928,
+            "unit": "bytes"
+          },
+          {
+            "name": "validate - abstract fragments - allocated objects",
+            "value": 438,
+            "unit": "objects"
+          },
+          {
+            "name": "validate - abstract fragments - retained objects",
+            "value": 79,
+            "unit": "objects"
+          },
+          {
+            "name": "validate - abstract fragments - allocated strings",
+            "value": 23,
+            "unit": "strings"
+          },
+          {
+            "name": "validate - abstract fragments - retained strings",
+            "value": 9,
+            "unit": "strings"
+          },
+          {
+            "name": "validate - big query - allocated memsize",
+            "value": 401824,
+            "unit": "bytes"
+          },
+          {
+            "name": "validate - big query - retained memsize",
+            "value": 94816,
+            "unit": "bytes"
+          },
+          {
+            "name": "validate - big query - allocated objects",
+            "value": 3345,
+            "unit": "objects"
+          },
+          {
+            "name": "validate - big query - retained objects",
+            "value": 323,
+            "unit": "objects"
+          },
+          {
+            "name": "validate - big query - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "validate - big query - retained strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "validate - fields will merge - allocated memsize",
+            "value": 2136000,
+            "unit": "bytes"
+          },
+          {
+            "name": "validate - fields will merge - retained memsize",
+            "value": 235040,
+            "unit": "bytes"
+          },
+          {
+            "name": "validate - fields will merge - allocated objects",
+            "value": 15153,
+            "unit": "objects"
+          },
+          {
+            "name": "validate - fields will merge - retained objects",
+            "value": 50,
+            "unit": "objects"
+          },
+          {
+            "name": "validate - fields will merge - allocated strings",
+            "value": 2,
+            "unit": "strings"
+          },
+          {
+            "name": "validate - fields will merge - retained strings",
+            "value": 1,
+            "unit": "strings"
+          },
+          {
+            "name": "execute - introspection - allocated memsize",
+            "value": 983097,
+            "unit": "bytes"
+          },
+          {
+            "name": "execute - introspection - retained memsize",
+            "value": 600,
+            "unit": "bytes"
+          },
+          {
+            "name": "execute - introspection - allocated objects",
+            "value": 4861,
+            "unit": "objects"
+          },
+          {
+            "name": "execute - introspection - retained objects",
+            "value": 11,
+            "unit": "objects"
+          },
+          {
+            "name": "execute - introspection - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "execute - introspection - retained strings",
+            "value": 8,
+            "unit": "strings"
+          },
+          {
+            "name": "execute - small query on large schema - allocated memsize",
+            "value": 26264,
+            "unit": "bytes"
+          },
+          {
+            "name": "execute - small query on large schema - retained memsize",
+            "value": 280,
+            "unit": "bytes"
+          },
+          {
+            "name": "execute - small query on large schema - allocated objects",
+            "value": 232,
+            "unit": "objects"
+          },
+          {
+            "name": "execute - small query on large schema - retained objects",
+            "value": 5,
+            "unit": "objects"
+          },
+          {
+            "name": "execute - small query on large schema - allocated strings",
+            "value": 3,
+            "unit": "strings"
+          },
+          {
+            "name": "execute - small query on large schema - retained strings",
+            "value": 2,
+            "unit": "strings"
+          },
+          {
+            "name": "execute - large result - allocated memsize",
+            "value": 1878000,
+            "unit": "bytes"
+          },
+          {
+            "name": "execute - large result - retained memsize",
+            "value": 640,
+            "unit": "bytes"
+          },
+          {
+            "name": "execute - large result - allocated objects",
+            "value": 6406,
+            "unit": "objects"
+          },
+          {
+            "name": "execute - large result - retained objects",
+            "value": 14,
+            "unit": "objects"
+          },
+          {
+            "name": "execute - large result - allocated strings",
+            "value": 12,
+            "unit": "strings"
+          },
+          {
+            "name": "execute - large result - retained strings",
+            "value": 11,
+            "unit": "strings"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4beaad1aac4d572e5161b2ccc90066d89f806445",
+          "message": "Merge pull request #5862 from leoarnold/leo.arnold/allow-zero-after-cursor\n\nAllow zero offset in RelationConnection after cursors",
+          "timestamp": "2026-11-11T11:24:11-05:00",
+          "tree_id": "7fbdf4ddf014060365e6b2bc76e59948b1d7f789",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/4beaad1aac4d572e5161b2ccc90066d89f806445"
+        },
+        "date": 1794414338009,
         "tool": "rubymemory",
         "benches": [
           {
