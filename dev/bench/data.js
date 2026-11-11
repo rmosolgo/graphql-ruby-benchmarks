@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794414088892,
+  "lastUpdate": 1794414336388,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -6400,6 +6400,86 @@ window.BENCHMARK_DATA = {
             "range": "±0.0%",
             "unit": "i/s",
             "extra": "177.000 iterations in 5.036660s (28.46 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4beaad1aac4d572e5161b2ccc90066d89f806445",
+          "message": "Merge pull request #5862 from leoarnold/leo.arnold/allow-zero-after-cursor\n\nAllow zero offset in RelationConnection after cursors",
+          "timestamp": "2026-11-11T11:24:11-05:00",
+          "tree_id": "7fbdf4ddf014060365e6b2bc76e59948b1d7f789",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/4beaad1aac4d572e5161b2ccc90066d89f806445"
+        },
+        "date": 1794414335937,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 5191,
+            "range": "±2.4%",
+            "unit": "i/s",
+            "extra": "26.000k iterations in 5.008236s (192.62 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 852.557,
+            "range": "±0.7%",
+            "unit": "i/s",
+            "extra": "4.284k iterations in 5.024886s (1.17 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 2329,
+            "range": "±1.9%",
+            "unit": "i/s",
+            "extra": "11.700k iterations in 5.023885s (429.39 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 194.07,
+            "range": "±1.5%",
+            "unit": "i/s",
+            "extra": "988.000 iterations in 5.090934s (5.15 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 39.436,
+            "range": "±0.0%",
+            "unit": "i/s",
+            "extra": "200.000 iterations in 5.071561s (25.36 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 129.363,
+            "range": "±1.5%",
+            "unit": "i/s",
+            "extra": "650.000 iterations in 5.024631s (7.73 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 4862,
+            "range": "±6.6%",
+            "unit": "i/s",
+            "extra": "24.500k iterations in 5.039491s (205.69 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 34.042,
+            "range": "±2.9%",
+            "unit": "i/s",
+            "extra": "171.000 iterations in 5.023255s (29.38 ms/i)"
           }
         ]
       }
