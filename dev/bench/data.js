@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794414340468,
+  "lastUpdate": 1794414342535,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -31013,6 +31013,50 @@ window.BENCHMARK_DATA = {
           {
             "name": "sorbet - typed calls",
             "value": 32.98,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4beaad1aac4d572e5161b2ccc90066d89f806445",
+          "message": "Merge pull request #5862 from leoarnold/leo.arnold/allow-zero-after-cursor\n\nAllow zero offset in RelationConnection after cursors",
+          "timestamp": "2026-11-11T11:24:11-05:00",
+          "tree_id": "7fbdf4ddf014060365e6b2bc76e59948b1d7f789",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/4beaad1aac4d572e5161b2ccc90066d89f806445"
+        },
+        "date": 1794414341975,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 36.44,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.55,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 32.99,
             "unit": "%"
           }
         ]
