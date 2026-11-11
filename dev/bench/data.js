@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794393310570,
+  "lastUpdate": 1794393312351,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -30109,6 +30109,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/7e8e80b002c4430180eb40526a5a1157a04996b3"
         },
         "date": 1794348908776,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 24.58,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.55,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 33.01,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "distinct": true,
+          "id": "c0d4dc11c197d29589bb875b44697ac0b8af95dd",
+          "message": "enterprise-1.7.1 and pro-1.30.6",
+          "timestamp": "2026-11-11T05:33:38-05:00",
+          "tree_id": "e4903d5c6a64ef0d7068098c475aa3b486102f6b",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/c0d4dc11c197d29589bb875b44697ac0b8af95dd"
+        },
+        "date": 1794393312051,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
