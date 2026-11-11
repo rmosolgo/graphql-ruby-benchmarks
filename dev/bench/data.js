@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794414086963,
+  "lastUpdate": 1794414088892,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -30571,6 +30571,50 @@ window.BENCHMARK_DATA = {
           {
             "name": "sorbet - typed calls",
             "value": 33.01,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ea9f1740ebdb02fd3713b94b9c50d1ee285125a0",
+          "message": "Merge pull request #5879 from rmosolgo/claude/sorbet-strict-batch-4\n\nSorbet: typed: strict batch 4 (StaticValidation errors and rules, OneOf, BlockString, RelayClassicMutation)",
+          "timestamp": "2026-11-11T11:20:03-05:00",
+          "tree_id": "385f12bb8be50429e1e15aa2962f52fc7d0ea392",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/ea9f1740ebdb02fd3713b94b9c50d1ee285125a0"
+        },
+        "date": 1794414088694,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 36.44,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.55,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 32.98,
             "unit": "%"
           }
         ]
