@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794927720111,
+  "lastUpdate": 1794927722002,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -31455,6 +31455,50 @@ window.BENCHMARK_DATA = {
           {
             "name": "sorbet - typed calls",
             "value": 32.99,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3c7ea3e5d746771a1500c131febf5b759469d044",
+          "message": "Merge pull request #5899 from rmosolgo/claude/graphql-ruby-compat-test-1c8499\n\nCall validate_non_null_input for scalar variables and literals",
+          "timestamp": "2026-11-17T09:59:31-05:00",
+          "tree_id": "3049d4fbfad65f696d18b25a53564b01d64265bc",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/3c7ea3e5d746771a1500c131febf5b759469d044"
+        },
+        "date": 1794927721644,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 36.44,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.54,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 32.97,
             "unit": "%"
           }
         ]
