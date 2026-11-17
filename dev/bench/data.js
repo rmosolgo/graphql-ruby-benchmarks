@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794931131929,
+  "lastUpdate": 1794931134378,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -33189,6 +33189,60 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/07ae2532b846e5745b08698e6ea97cb2016a0702"
         },
         "date": 1794931035795,
+        "tool": "rubymemory",
+        "benches": [
+          {
+            "name": "build large schema - allocated memsize",
+            "value": 8773000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - retained memsize",
+            "value": 4673000,
+            "unit": "bytes"
+          },
+          {
+            "name": "build large schema - allocated objects",
+            "value": 51054,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - retained objects",
+            "value": 13841,
+            "unit": "objects"
+          },
+          {
+            "name": "build large schema - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "build large schema - retained strings",
+            "value": 50,
+            "unit": "strings"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "distinct": true,
+          "id": "6fb2eece92f7dc331b452fd5c11fa6c1fa03a124",
+          "message": "2.6.16",
+          "timestamp": "2026-11-17T10:56:28-05:00",
+          "tree_id": "113a8a21fd37b15aee9cdb80ffa2b11e64308e19",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/6fb2eece92f7dc331b452fd5c11fa6c1fa03a124"
+        },
+        "date": 1794931133655,
         "tool": "rubymemory",
         "benches": [
           {
