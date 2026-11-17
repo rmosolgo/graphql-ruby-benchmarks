@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794930728703,
+  "lastUpdate": 1794930730421,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -27817,6 +27817,270 @@ window.BENCHMARK_DATA = {
           {
             "name": "execute - large result - retained strings",
             "value": 0,
+            "unit": "strings"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3d806cd102eb478dd58236364036fca5582236b3",
+          "message": "Merge commit from fork\n\nAlways clear was_authorized_by_scope_items after a field finishes",
+          "timestamp": "2026-11-17T10:50:43-05:00",
+          "tree_id": "05ff5654eb708cb362e0ca73579783a6381546c3",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/3d806cd102eb478dd58236364036fca5582236b3"
+        },
+        "date": 1794930730253,
+        "tool": "rubymemory",
+        "benches": [
+          {
+            "name": "parse - introspection - allocated memsize",
+            "value": 29080,
+            "unit": "bytes"
+          },
+          {
+            "name": "parse - introspection - retained memsize",
+            "value": 16600,
+            "unit": "bytes"
+          },
+          {
+            "name": "parse - introspection - allocated objects",
+            "value": 259,
+            "unit": "objects"
+          },
+          {
+            "name": "parse - introspection - retained objects",
+            "value": 181,
+            "unit": "objects"
+          },
+          {
+            "name": "parse - introspection - allocated strings",
+            "value": 27,
+            "unit": "strings"
+          },
+          {
+            "name": "parse - introspection - retained strings",
+            "value": 27,
+            "unit": "strings"
+          },
+          {
+            "name": "parse - big query - allocated memsize",
+            "value": 180720,
+            "unit": "bytes"
+          },
+          {
+            "name": "parse - big query - retained memsize",
+            "value": 99920,
+            "unit": "bytes"
+          },
+          {
+            "name": "parse - big query - allocated objects",
+            "value": 1622,
+            "unit": "objects"
+          },
+          {
+            "name": "parse - big query - retained objects",
+            "value": 1117,
+            "unit": "objects"
+          },
+          {
+            "name": "parse - big query - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "parse - big query - retained strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "validate - abstract fragments - allocated memsize",
+            "value": 42376,
+            "unit": "bytes"
+          },
+          {
+            "name": "validate - abstract fragments - retained memsize",
+            "value": 11768,
+            "unit": "bytes"
+          },
+          {
+            "name": "validate - abstract fragments - allocated objects",
+            "value": 432,
+            "unit": "objects"
+          },
+          {
+            "name": "validate - abstract fragments - retained objects",
+            "value": 73,
+            "unit": "objects"
+          },
+          {
+            "name": "validate - abstract fragments - allocated strings",
+            "value": 16,
+            "unit": "strings"
+          },
+          {
+            "name": "validate - abstract fragments - retained strings",
+            "value": 0,
+            "unit": "strings"
+          },
+          {
+            "name": "validate - big query - allocated memsize",
+            "value": 401824,
+            "unit": "bytes"
+          },
+          {
+            "name": "validate - big query - retained memsize",
+            "value": 93896,
+            "unit": "bytes"
+          },
+          {
+            "name": "validate - big query - allocated objects",
+            "value": 3345,
+            "unit": "objects"
+          },
+          {
+            "name": "validate - big query - retained objects",
+            "value": 303,
+            "unit": "objects"
+          },
+          {
+            "name": "validate - big query - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "validate - big query - retained strings",
+            "value": 41,
+            "unit": "strings"
+          },
+          {
+            "name": "validate - fields will merge - allocated memsize",
+            "value": 2136000,
+            "unit": "bytes"
+          },
+          {
+            "name": "validate - fields will merge - retained memsize",
+            "value": 235240,
+            "unit": "bytes"
+          },
+          {
+            "name": "validate - fields will merge - allocated objects",
+            "value": 15153,
+            "unit": "objects"
+          },
+          {
+            "name": "validate - fields will merge - retained objects",
+            "value": 52,
+            "unit": "objects"
+          },
+          {
+            "name": "validate - fields will merge - allocated strings",
+            "value": 2,
+            "unit": "strings"
+          },
+          {
+            "name": "validate - fields will merge - retained strings",
+            "value": 0,
+            "unit": "strings"
+          },
+          {
+            "name": "execute - introspection - allocated memsize",
+            "value": 983177,
+            "unit": "bytes"
+          },
+          {
+            "name": "execute - introspection - retained memsize",
+            "value": 198544,
+            "unit": "bytes"
+          },
+          {
+            "name": "execute - introspection - allocated objects",
+            "value": 4862,
+            "unit": "objects"
+          },
+          {
+            "name": "execute - introspection - retained objects",
+            "value": 1510,
+            "unit": "objects"
+          },
+          {
+            "name": "execute - introspection - allocated strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "execute - introspection - retained strings",
+            "value": 50,
+            "unit": "strings"
+          },
+          {
+            "name": "execute - small query on large schema - allocated memsize",
+            "value": 26240,
+            "unit": "bytes"
+          },
+          {
+            "name": "execute - small query on large schema - retained memsize",
+            "value": 8664,
+            "unit": "bytes"
+          },
+          {
+            "name": "execute - small query on large schema - allocated objects",
+            "value": 232,
+            "unit": "objects"
+          },
+          {
+            "name": "execute - small query on large schema - retained objects",
+            "value": 79,
+            "unit": "objects"
+          },
+          {
+            "name": "execute - small query on large schema - allocated strings",
+            "value": 3,
+            "unit": "strings"
+          },
+          {
+            "name": "execute - small query on large schema - retained strings",
+            "value": 1,
+            "unit": "strings"
+          },
+          {
+            "name": "execute - large result - allocated memsize",
+            "value": 1878000,
+            "unit": "bytes"
+          },
+          {
+            "name": "execute - large result - retained memsize",
+            "value": 1048000,
+            "unit": "bytes"
+          },
+          {
+            "name": "execute - large result - allocated objects",
+            "value": 6407,
+            "unit": "objects"
+          },
+          {
+            "name": "execute - large result - retained objects",
+            "value": 4101,
+            "unit": "objects"
+          },
+          {
+            "name": "execute - large result - allocated strings",
+            "value": 12,
+            "unit": "strings"
+          },
+          {
+            "name": "execute - large result - retained strings",
+            "value": 10,
             "unit": "strings"
           }
         ]
