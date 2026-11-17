@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794930394536,
+  "lastUpdate": 1794930396789,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -33203,6 +33203,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/a555f9aa681be20079b6cfdbc6c4b3e994634ebb"
         },
         "date": 1794930044329,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 45.76,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.54,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 32.97,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "90efd36daf3433daa8dfa80b03d7135c5676ead6",
+          "message": "Merge pull request #5902 from rmosolgo/claude/hasauthorization-extended-authorizes-35a015\n\nRemove unused @authorizes ivar from HasAuthorization.extended",
+          "timestamp": "2026-11-17T10:45:05-05:00",
+          "tree_id": "3e6e8ba26174adf850258f671f238ddf10dd5280",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/90efd36daf3433daa8dfa80b03d7135c5676ead6"
+        },
+        "date": 1794930396487,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
