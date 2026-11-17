@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794930396789,
+  "lastUpdate": 1794930728703,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -6880,6 +6880,86 @@ window.BENCHMARK_DATA = {
             "range": "±3.6%",
             "unit": "i/s",
             "extra": "138.000 iterations in 5.021608s (36.39 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3d806cd102eb478dd58236364036fca5582236b3",
+          "message": "Merge commit from fork\n\nAlways clear was_authorized_by_scope_items after a field finishes",
+          "timestamp": "2026-11-17T10:50:43-05:00",
+          "tree_id": "05ff5654eb708cb362e0ca73579783a6381546c3",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/3d806cd102eb478dd58236364036fca5582236b3"
+        },
+        "date": 1794930728525,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 6369,
+            "range": "±0.7%",
+            "unit": "i/s",
+            "extra": "32.250k iterations in 5.063713s (157.01 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 1030,
+            "range": "±1.1%",
+            "unit": "i/s",
+            "extra": "5.200k iterations in 5.047154s (970.61 μs/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 2440,
+            "range": "±8.4%",
+            "unit": "i/s",
+            "extra": "12.374k iterations in 5.070371s (409.76 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 211.184,
+            "range": "±2.4%",
+            "unit": "i/s",
+            "extra": "1.071k iterations in 5.071411s (4.74 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 50.136,
+            "range": "±0.0%",
+            "unit": "i/s",
+            "extra": "255.000 iterations in 5.086213s (19.95 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 146.528,
+            "range": "±2.0%",
+            "unit": "i/s",
+            "extra": "742.000 iterations in 5.063890s (6.82 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 5123,
+            "range": "±8.7%",
+            "unit": "i/s",
+            "extra": "25.843k iterations in 5.044272s (195.19 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 47.652,
+            "range": "±2.1%",
+            "unit": "i/s",
+            "extra": "240.000 iterations in 5.036503s (20.99 ms/i)"
           }
         ]
       }
