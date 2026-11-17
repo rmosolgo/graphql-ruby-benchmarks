@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794931036108,
+  "lastUpdate": 1794931037872,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -34529,6 +34529,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/8ca3c4b6de5dd4e01adfee1bc89c644b95a36af3"
         },
         "date": 1794930920959,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 45.76,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.54,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 32.97,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "07ae2532b846e5745b08698e6ea97cb2016a0702",
+          "message": "Merge commit from fork\n\nPrevent exponential backtracking in block string lexing",
+          "timestamp": "2026-11-17T10:55:51-05:00",
+          "tree_id": "1701423a91aaa844b5b54ab73e51504fb23ef5d7",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/07ae2532b846e5745b08698e6ea97cb2016a0702"
+        },
+        "date": 1794931037549,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
