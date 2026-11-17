@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794930732310,
+  "lastUpdate": 1794930734107,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -33645,6 +33645,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/90efd36daf3433daa8dfa80b03d7135c5676ead6"
         },
         "date": 1794930396487,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 45.76,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.54,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 32.97,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3d806cd102eb478dd58236364036fca5582236b3",
+          "message": "Merge commit from fork\n\nAlways clear was_authorized_by_scope_items after a field finishes",
+          "timestamp": "2026-11-17T10:50:43-05:00",
+          "tree_id": "05ff5654eb708cb362e0ca73579783a6381546c3",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/3d806cd102eb478dd58236364036fca5582236b3"
+        },
+        "date": 1794930733929,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
