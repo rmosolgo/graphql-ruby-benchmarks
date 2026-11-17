@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794930042392,
+  "lastUpdate": 1794930044557,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -32771,6 +32771,50 @@ window.BENCHMARK_DATA = {
           {
             "name": "sorbet - files at typed: strict or stricter",
             "value": 36.44,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.54,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 32.97,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a555f9aa681be20079b6cfdbc6c4b3e994634ebb",
+          "message": "Merge pull request #5900 from rmosolgo/claude/sorbet-strict-batch-5\n\nSorbet: move 33 more lib/ files to typed: strict",
+          "timestamp": "2026-11-17T10:39:13-05:00",
+          "tree_id": "ea1a7ec1a641b74842cf8b01e0f40cda039058aa",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/a555f9aa681be20079b6cfdbc6c4b3e994634ebb"
+        },
+        "date": 1794930044329,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 45.76,
             "unit": "%"
           },
           {
