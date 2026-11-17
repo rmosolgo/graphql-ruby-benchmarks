@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794933648576,
+  "lastUpdate": 1794933650654,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -35413,6 +35413,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/6fb2eece92f7dc331b452fd5c11fa6c1fa03a124"
         },
         "date": 1794931136700,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 45.76,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.54,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 32.97,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9c9f8f28cc6f297c6944b3cc6f567bf4ebcd98b6",
+          "message": "Merge pull request #5903 from rmosolgo/claude/fix-ci-master-eebe5b\n\nFix CI on master",
+          "timestamp": "2026-11-17T11:39:21-05:00",
+          "tree_id": "46fa37391f4197152fe13f17558407be5180ce79",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/9c9f8f28cc6f297c6944b3cc6f567bf4ebcd98b6"
+        },
+        "date": 1794933650151,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
