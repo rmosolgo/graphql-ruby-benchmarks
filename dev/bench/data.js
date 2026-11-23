@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794933650654,
+  "lastUpdate": 1795466166060,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -7280,6 +7280,86 @@ window.BENCHMARK_DATA = {
             "range": "±2.0%",
             "unit": "i/s",
             "extra": "245.000 iterations in 5.000892s (20.41 ms/i)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b9148d4a0fd3e2af04adbca233aa631b56506f93",
+          "message": "Merge pull request #5909 from nehresma/fix-sentry-trace-child-spans\n\nFinish the child spans SentryTrace starts",
+          "timestamp": "2026-11-23T15:33:02-05:00",
+          "tree_id": "67104d7586790c8254f6e20b891ddd171f584f61",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/b9148d4a0fd3e2af04adbca233aa631b56506f93"
+        },
+        "date": 1795466165821,
+        "tool": "rubyruntime",
+        "benches": [
+          {
+            "name": "parse - introspection",
+            "value": 4176,
+            "range": "±1.4%",
+            "unit": "i/s",
+            "extra": "21.063k iterations in 5.044040s (239.47 μs/i)"
+          },
+          {
+            "name": "parse - big query",
+            "value": 677.232,
+            "range": "±1.9%",
+            "unit": "i/s",
+            "extra": "3.400k iterations in 5.020439s (1.48 ms/i)"
+          },
+          {
+            "name": "validate - abstract fragments",
+            "value": 1558,
+            "range": "±3.0%",
+            "unit": "i/s",
+            "extra": "7.824k iterations in 5.022440s (641.93 μs/i)"
+          },
+          {
+            "name": "validate - big query",
+            "value": 139.845,
+            "range": "±3.6%",
+            "unit": "i/s",
+            "extra": "700.000 iterations in 5.005527s (7.15 ms/i)"
+          },
+          {
+            "name": "validate - fields will merge",
+            "value": 32.322,
+            "range": "±3.1%",
+            "unit": "i/s",
+            "extra": "162.000 iterations in 5.012005s (30.94 ms/i)"
+          },
+          {
+            "name": "execute - introspection",
+            "value": 98.289,
+            "range": "±3.1%",
+            "unit": "i/s",
+            "extra": "495.000 iterations in 5.036160s (10.17 ms/i)"
+          },
+          {
+            "name": "execute - small query on large schema",
+            "value": 3118,
+            "range": "±3.6%",
+            "unit": "i/s",
+            "extra": "15.888k iterations in 5.095618s (320.72 μs/i)"
+          },
+          {
+            "name": "execute - large result",
+            "value": 28.749,
+            "range": "±3.5%",
+            "unit": "i/s",
+            "extra": "144.000 iterations in 5.008911s (34.78 ms/i)"
           }
         ]
       }
