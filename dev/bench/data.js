@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795466169674,
+  "lastUpdate": 1795466171238,
   "repoUrl": "https://github.com/rmosolgo/graphql-ruby",
   "entries": {
     "Runtime": [
@@ -35855,6 +35855,50 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/rmosolgo/graphql-ruby/commit/9c9f8f28cc6f297c6944b3cc6f567bf4ebcd98b6"
         },
         "date": 1794933650151,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "sorbet - files at typed: true or stricter",
+            "value": 93.79,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - files at typed: strict or stricter",
+            "value": 45.76,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - methods with signatures",
+            "value": 1.54,
+            "unit": "%"
+          },
+          {
+            "name": "sorbet - typed calls",
+            "value": 32.97,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rdmosolgo@gmail.com",
+            "name": "Robert Mosolgo",
+            "username": "rmosolgo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b9148d4a0fd3e2af04adbca233aa631b56506f93",
+          "message": "Merge pull request #5909 from nehresma/fix-sentry-trace-child-spans\n\nFinish the child spans SentryTrace starts",
+          "timestamp": "2026-11-23T15:33:02-05:00",
+          "tree_id": "67104d7586790c8254f6e20b891ddd171f584f61",
+          "url": "https://github.com/rmosolgo/graphql-ruby/commit/b9148d4a0fd3e2af04adbca233aa631b56506f93"
+        },
+        "date": 1795466171041,
         "tool": "customBiggerIsBetter",
         "benches": [
           {
